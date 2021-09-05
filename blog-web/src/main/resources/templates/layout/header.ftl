@@ -7,9 +7,9 @@
             <div class="clear"></div>
         </div>
         <div class="menu-topmenu-container pull-right">
-<#--            <ul class="list-unstyled list-inline pull-left">-->
-<#--                <li><a href="${config.siteUrl}/about" class="menu_a" title="关于我" data-toggle="tooltip" data-placement="bottom">关于我</a></li>-->
-<#--            </ul>-->
+            <ul class="list-unstyled list-inline pull-left">
+                <li><a href="${config.siteUrl}/about" class="menu_a" title="关于我" data-toggle="tooltip" data-placement="bottom">关于我</a></li>
+            </ul>
             <#if user??>
                 <ul class="list-unstyled list-inline nav navbar-nav">
                     <li class="dropdown">
@@ -38,30 +38,30 @@
 <#--                </ul>-->
             </div>
             <div class="modal-body">
-                <div class="oauth">
-                    <ul class="list-unstyled list-inline oauth-list">
-                        <@zhydTag method="listAvailableOAuthPlatforms">
-                            <#if listAvailableOAuthPlatforms?? && listAvailableOAuthPlatforms?size gt 0>
-                                <#list listAvailableOAuthPlatforms as item>
-                                    <li>
-                                        <a href="${config.siteUrl}/oauth/social/${item.platform}" target="">
-                                            <img src="${item.logo}" alt="" class="img-circle">
-                                        </a>
-                                    </li>
-                                </#list>
-                            <#else>
-                                <li>
-                                    稍等一下， 博主正在快马加鞭的配置~~
-                                </li>
-                            </#if>
-                        </@zhydTag>
-                    </ul>
-                    <div class="oauth-line">
-                        <span style="font-size: 12px">
-                            Powered by <a href="https://gitee.com/fujieid/jap" target="_blank">JustAuthPlus(JAP)</a>
-                        </span>
-                    </div>
-                </div>
+<#--                <div class="oauth">-->
+<#--                    <ul class="list-unstyled list-inline oauth-list">-->
+<#--                        <@zhydTag method="listAvailableOAuthPlatforms">-->
+<#--                            <#if listAvailableOAuthPlatforms?? && listAvailableOAuthPlatforms?size gt 0>-->
+<#--                                <#list listAvailableOAuthPlatforms as item>-->
+<#--                                    <li>-->
+<#--                                        <a href="${config.siteUrl}/oauth/social/${item.platform}" target="">-->
+<#--                                            <img src="${item.logo}" alt="" class="img-circle">-->
+<#--                                        </a>-->
+<#--                                    </li>-->
+<#--                                </#list>-->
+<#--                            <#else>-->
+<#--                                <li>-->
+<#--                                    稍等一下， 博主正在快马加鞭的配置~~-->
+<#--                                </li>-->
+<#--                            </#if>-->
+<#--                        </@zhydTag>-->
+<#--                    </ul>-->
+<#--                    <div class="oauth-line">-->
+<#--                        <span style="font-size: 12px">-->
+<#--                            Powered by <a href="https://gitee.com/fujieid/jap" target="_blank">JustAuthPlus(JAP)</a>-->
+<#--                        </span>-->
+<#--                    </div>-->
+<#--                </div>-->
             </div>
         </div>
     </div>
