@@ -10,7 +10,7 @@
     <description>file update module</description>
 
     <parent>
-        <groupId>com.zyd</groupId>
+        <groupId>net.gcl</groupId>
         <artifactId>blog</artifactId>
         <version>${oneblog.version}</version>
     </parent>

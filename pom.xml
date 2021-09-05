@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.zyd</groupId>
+    <groupId>net.gcl</groupId>
     <artifactId>blog</artifactId>
     <version>${oneblog.version}</version>
     <packaging>pom</packaging>
@@ -57,22 +57,22 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.zyd</groupId>
+                <groupId>net.gcl</groupId>
                 <artifactId>blog-core</artifactId>
                 <version>${oneblog.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.zyd</groupId>
+                <groupId>net.gcl</groupId>
                 <artifactId>blog-admin</artifactId>
                 <version>${oneblog.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.zyd</groupId>
+                <groupId>net.gcl</groupId>
                 <artifactId>blog-web</artifactId>
                 <version>${oneblog.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.zyd</groupId>
+                <groupId>net.gcl</groupId>
                 <artifactId>blog-file</artifactId>
                 <version>${oneblog.version}</version>
             </dependency>

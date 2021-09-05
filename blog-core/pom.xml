@@ -10,7 +10,7 @@
     <description>OneBlog 核心依赖代码，包含bo、do、dao等</description>
 
     <parent>
-        <groupId>com.zyd</groupId>
+        <groupId>net.gcl</groupId>
         <artifactId>blog</artifactId>
         <version>${oneblog.version}</version>
     </parent>
@@ -231,7 +231,7 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>com.zyd</groupId>
+            <groupId>net.gcl</groupId>
             <artifactId>blog-file</artifactId>
             <exclusions>
                 <exclusion>
