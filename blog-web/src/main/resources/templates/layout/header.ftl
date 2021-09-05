@@ -8,7 +8,7 @@
         </div>
         <div class="menu-topmenu-container pull-right">
             <ul class="list-unstyled list-inline pull-left">
-                <li><a href="${config.siteUrl}/about" class="menu_a" title="关于我" data-toggle="tooltip" data-placement="bottom">关于我</a></li>
+                <li><a href="${config.siteUrl}/about" class="menu_a" title="AboutMe" data-toggle="tooltip" data-placement="bottom">AboutMe</a></li>
             </ul>
             <#if user??>
                 <ul class="list-unstyled list-inline nav navbar-nav">
@@ -87,7 +87,7 @@
             </div>
             <ul class="nav navbar-nav ">
                 <li>
-                    <a href="/" class="menu_a"><i class="fa fa-home"></i>首页</a>
+                    <a href="/" class="menu_a"><i class="fa fa-home"></i>Home</a>
                 </li>
                 <@zhydTag method="types">
                     <#if types?? && types?size gt 0>
@@ -109,7 +109,7 @@
                         </#list>
                     </#if>
                 </@zhydTag>
-                <li><a href="/guestbook" class="menu_a"><i class="fa fa-comments-o"></i>留言板</a></li>
+                <li><a href="/guestbook" class="menu_a"><i class="fa fa-comments-o"></i>MessageBoard</a></li>
                 <li><span class="pull-right nav-search main-search" data-toggle="modal" data-target=".nav-search-box"><i class="fa fa-search"></i></span></li>
             </ul>
         </div>

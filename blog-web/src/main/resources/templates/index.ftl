@@ -1,6 +1,6 @@
 <#include "include/macros.ftl">
 <@compress single_line=false>
-<@header title="${config.siteName!} | 一个程序员的个人博客"
+<@header title="${config.siteName!} | 心之所向，无所不成"
     keywords="${config.homeKeywords!}"
     description="${config.homeDesc!}"
     canonical="/${url!}">
@@ -12,14 +12,14 @@
         <div class="notify"><i class="fa fa-bullhorn fa-fw"></i></div>
         <div id="scrolldiv">
             <div class="scrolltext">
-                <ul class="list-unstyled" id="notice-box">
-                   <li class="scrolltext-title">
-                        <a href="javascript:void(0)" rel="bookmark">Hello Word</a>
-                    </li>
-                    <li class="scrolltext-title">
-                        <a href="javascript:void(0)" rel="bookmark">Hello New Word</a>
-                    </li>
-                </ul>
+<#--                <ul class="list-unstyled" id="notice-box">-->
+<#--                   <li class="scrolltext-title">-->
+<#--                        <a href="javascript:void(0)" rel="bookmark">Hello Word</a>-->
+<#--                    </li>-->
+<#--                    <li class="scrolltext-title">-->
+<#--                        <a href="javascript:void(0)" rel="bookmark">Hello New Word</a>-->
+<#--                    </li>-->
+<#--                </ul>-->
             </div>
         </div>
     </nav>

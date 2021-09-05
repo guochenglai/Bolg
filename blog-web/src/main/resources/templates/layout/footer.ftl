@@ -97,7 +97,7 @@
         <div class="container">
             <div class="row">
                 <div class="col col-xs-12 col-md-12 col-lg-12">
-                    <p><#if config.copyright!>${config.copyright} |</#if> Powered by <a href="https://guochenglai.com" title="编程是一种美德，是促使一个人不断向上发展的一种原动力. . ." data-toggle="tooltip" data-placement="right" target="_blank" style="color: #4286ca;font-weight: 600;">Guo Chenglai</a>  </p>
+                    <p><#if config.copyright!>${config.copyright} |</#if> Powered by <a href="https://guochenglai.com" title="Hello Word" data-toggle="tooltip" data-placement="right" target="_blank" style="color: #4286ca;font-weight: 600;">Guo Chenglai</a>  </p>
                     <#if url?? && (url == "index")>
                         <div class="inline external-links">
                         </div>

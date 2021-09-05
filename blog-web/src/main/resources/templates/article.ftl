@@ -50,7 +50,7 @@
                             ${article.content}
                         </#if>
                     </div>
-                    <div class="separateline"><span>正文到此结束</span></div>
+                    <div class="separateline"><span></span></div>
                     <div id="social" style="margin-bottom: 45px;">
                         <div class="social-main">
                             <span class="like">
