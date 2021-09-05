@@ -5,7 +5,6 @@ import net.gcl.blog.persistence.beans.SysSocialConfig;
 import java.util.Date;
 
 /**
- * @author yadong.zhang email:yadong.zhang(a)innodev.com.cn
  * @version 1.0
  * @date 2021/04/27 14:34
  * @since 1.0

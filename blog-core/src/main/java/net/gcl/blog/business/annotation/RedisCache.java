@@ -6,7 +6,6 @@ import java.util.concurrent.TimeUnit;
 /**
  * Redis缓存自定义注解
  *
- * @author yadong.zhang (yadong.zhang0415(a)gmail.com)
  * @version 1.0
  * @website https://docs.zhyd.me
  * @date 2018/4/16 16:26

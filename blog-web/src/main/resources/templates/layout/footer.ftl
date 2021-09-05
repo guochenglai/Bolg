@@ -37,17 +37,16 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="comment-detail-modal-label">评论信息框</h4>
-                <small><i class="fa fa-lightbulb-o fa-fw"></i>可以通过QQ号实时获取昵称和头像</small>
+                <h4 class="modal-title" id="comment-detail-modal-label">你的信息</h4>
             </div>
             <div class="modal-body">
                 <form id="detail-form">
                     <input type="hidden" name="avatar">
-                    <div class="form-group input-logo">
-                        <input type="text" class="form-control" name="qq" placeholder="选填" value="">
-                        <img class="pull-left hide" alt="">
-                        <span class="fa fa-qq pull-left" aria-hidden="true">QQ</span>
-                    </div>
+<#--                    <div class="form-group input-logo">-->
+<#--                        <input type="text" class="form-control" name="qq" placeholder="选填" value="">-->
+<#--                        <img class="pull-left hide" alt="">-->
+<#--                        <span class="fa fa-qq pull-left" aria-hidden="true">QQ</span>-->
+<#--                    </div>-->
                     <div class="form-group input-logo">
                         <input type="text" class="form-control" name="nickname" placeholder="必填" value="匿名">
                         <span class="fa fa-user pull-left" aria-hidden="true">昵称</span>
@@ -56,12 +55,12 @@
                         <input type="text" class="form-control" name="email" placeholder="选填">
                         <span class="fa fa-envelope pull-left" aria-hidden="true">邮箱</span>
                     </div>
-                    <div class="form-group input-logo">
-                        <input type="text" class="form-control" name="url" placeholder="选填">
-                        <span class="fa fa-globe pull-left" aria-hidden="true">网址</span>
-                    </div>
+<#--                    <div class="form-group input-logo">-->
+<#--                        <input type="text" class="form-control" name="url" placeholder="选填">-->
+<#--                        <span class="fa fa-globe pull-left" aria-hidden="true">网址</span>-->
+<#--                    </div>-->
                     <div class="form-group">
-                        <button type="button" class="btn btn-default btn-sm" id="detail-form-btn"><i class="fa fa-smile-o"></i>提交评论</button>
+                        <button type="button" class="btn btn-default btn-sm" id="detail-form-btn"><i class="fa fa-smile-o"></i>提交</button>
                     </div>
                 </form>
             </div>

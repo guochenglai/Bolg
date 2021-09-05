@@ -17,9 +17,7 @@ import java.util.Map;
 /**
  * 系统配置
  *
- * @author yadong.zhang (yadong.zhang0415(a)gmail.com)
  * @version 1.0
- * @website https://docs.zhyd.me
  * @date 2018/4/24 14:37
  * @since 1.0
  */

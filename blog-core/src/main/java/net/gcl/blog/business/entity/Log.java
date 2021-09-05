@@ -8,7 +8,6 @@ import net.gcl.blog.persistence.beans.SysLog;
 import java.util.Date;
 
 /**
- * @author yadong.zhang email:yadong.zhang0415(a)gmail.com
  * @version 1.0
  * @date 2018/01/09 17:40
  * @since 1.0

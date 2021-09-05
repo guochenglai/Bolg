@@ -20,9 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Social Config
  *
- * @author yadong.zhang (yadong.zhang0415(a)gmail.com)
  * @version 1.0
- * @website https://docs.zhyd.me
  * @date 2021/4/27 14:37
  * @since 1.0
  */
