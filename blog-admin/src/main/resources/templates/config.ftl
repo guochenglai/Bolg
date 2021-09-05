@@ -4,13 +4,13 @@
     <div class="col-md-12 col-sm-12 col-xs-12">
         <@breadcrumb>
             <ol class="breadcrumb">
-                <li><a href="/">首页</a></li>
-                <li class="active">系统配置</li>
+                <li><a href="/">Home</a></li>
+                <li class="active">System Config</li>
             </ol>
         </@breadcrumb>
         <div class="x_panel">
             <div class="x_title">
-                <h2>系统配置 </h2>
+                <h2>System Config </h2>
                 <div class="clearfix"></div>
             </div>
             <div class="x_content">
