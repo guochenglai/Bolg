@@ -109,7 +109,7 @@
                     </div>
                     <div class="form-group has-info">
                         <div class="input-group input-logo">
-                            <input type="text" class="form-control" name="description" placeholder="一个程序员的个人博客。心之所向，无所不能。" style="padding-left: 88px;">
+                            <input type="text" class="form-control" name="description" placeholder="心之所向，无所不能。" style="padding-left: 88px;">
                             <span class="fa fa-commenting pull-left" aria-hidden="true" style="width: 75px;">站点描述</span>
                         </div>
                     </div>

@@ -50,7 +50,7 @@
                             ${article.content}
                         </#if>
                     </div>
-                    <div class="separateline"><span>正文到此结束</span></div>
+                    <div class="separateline"><span></span></div>
                     <div id="social" style="margin-bottom: 45px;">
                         <div class="social-main">
                             <span class="like">
@@ -64,11 +64,11 @@
                                 <span class="share-s"><a href="javascript:void(0)" id="share-s" title="分享"><i class="fa fa-share-alt"></i>分享</a></span>
                                 <div id="share" style="display: none">
                                     <ul class="bdsharebuttonbox bdshare-button-style1-16" data-bd-bind="1516426362121">
-                                        <li><a title="分享到人人网" class="fa fa-renren" data-cmd="renren" onclick="return false;" href="#"></a></li>
-                                        <li><a title="分享到QQ空间" class="fa fa-qq" data-cmd="qzone" onclick="return false;" href="#"></a></li>
-                                        <li><a title="分享到新浪微博" class="fa fa-weibo" data-cmd="tsina" onclick="return false;" href="#"></a></li>
+<#--                                        <li><a title="分享到人人网" class="fa fa-renren" data-cmd="renren" onclick="return false;" href="#"></a></li>-->
+<#--                                        <li><a title="分享到QQ空间" class="fa fa-qq" data-cmd="qzone" onclick="return false;" href="#"></a></li>-->
+<#--                                        <li><a title="分享到新浪微博" class="fa fa-weibo" data-cmd="tsina" onclick="return false;" href="#"></a></li>-->
                                         <li><a title="分享到微信" class="fa fa-weixin" data-cmd="weixin" onclick="return false;" href="#"></a></li>
-                                        <li><a title="更多" class="bds_more fa fa-plus-square" data-cmd="more" onclick="return false;" href="#"></a></li>
+<#--                                        <li><a title="更多" class="bds_more fa fa-plus-square" data-cmd="more" onclick="return false;" href="#"></a></li>-->
                                     </ul>
                                 </div>
                             </div>
@@ -91,21 +91,21 @@
                                     <a href="javascript:;;" class="c-label" data-original-title="暂无相关标签" data-toggle="tooltip" data-placement="bottom" target="_blank">暂无相关标签</a>
                                 </#if>
                         </li>
-                        <li>
-                            <strong>版权声明：</strong>
-                            <#if article.original?string('true','false') == 'true'>
-                            本站原创文章，于${article.createTime?string('yyyy年MM月dd日')}由<a href="${config.siteUrl}" target="_blank" data-original-title="${config.siteName}" data-toggle="tooltip" data-placement="bottom"><strong>${config.authorName}</strong></a>发布，转载请注明出处
-                            <#else>
-                            本文为互联网转载文章，出处已在文章中说明(部分除外)。如果侵权，请<a target="_blank" href="mailto:${config.authorEmail}" title="点击给我发邮件" data-toggle="tooltip" data-placement="bottom"><strong>联系本站长</strong></a>删除，谢谢。
-                            </#if>
-                        </li>
+<#--                        <li>-->
+<#--                            <strong>版权声明：</strong>-->
+<#--                            <#if article.original?string('true','false') == 'true'>-->
+<#--                            本站原创文章，于${article.createTime?string('yyyy年MM月dd日')}由<a href="${config.siteUrl}" target="_blank" data-original-title="${config.siteName}" data-toggle="tooltip" data-placement="bottom"><strong>${config.authorName}</strong></a>发布，转载请注明出处-->
+<#--                            <#else>-->
+<#--                            本文为互联网转载文章，出处已在文章中说明(部分除外)。如果侵权，请<a target="_blank" href="mailto:${config.authorEmail}" title="点击给我发邮件" data-toggle="tooltip" data-placement="bottom"><strong>联系本站长</strong></a>删除，谢谢。-->
+<#--                            </#if>-->
+<#--                        </li>-->
                     </ul>
                 </div>
             </div>
             <div class="blog-body">
-                <a href="https://promotion.aliyun.com/ntms/act/ambassador/sharetouser.html?userCode=wylo59db&utm_source=wylo59db" target="_blank" rel="external nofollow">
-                    <img src="${config.staticWebSite}/img/ad/aliyun_sale1000-60.png" alt="阿里云首购8折" class="img-responsive" style="width: 100%;">
-                </a>
+<#--                <a href="we can add ad here" target="_blank" rel="external nofollow">-->
+<#--                    <img src="${config.staticWebSite}/img/ad/aliyun_sale1000-60.png" alt="This is ad" class="img-responsive" style="width: 100%;">-->
+<#--                </a>-->
             </div>
             <div class="blog-body prev-next">
                 <nav class="nav-single wow" data-wow-delay="0.3s">
@@ -139,66 +139,66 @@
                 </nav>
             </div>
             <#-- 热门推荐 -->
-            <div class="blog-body clear overflow-initial">
-                <h5 class="custom-title"><i class="fa fa-fire fa-fw icon"></i><strong>热门推荐</strong><small></small></h5>
-                <ul class="list-unstyled">
-                    <@articleTag method="hotList" pageSize="10">
-                        <#if hotList?? && (hotList?size > 0)>
-                            <#list hotList as item>
-                            <li class="line-li">
-                                <div class="line-container">
-                                    <div class="line-left">
-                                        <#if item.coverImage??>
-                                            <img class="lazy-img" <#if config.lazyloadPath!>data-original<#else>src</#if>="${item.coverImage}" onerror="this.src='${config.staticWebSite}/img/default.png'"width="50" height="50" rel="external nofollow"/>
-                                        <#else>
-                                            <img class="lazy-img" <#if config.lazyloadPath!>data-original<#else>src</#if>="${config.staticWebSite}/img/favicon.ico" onerror="this.src='${config.staticWebSite}/img/default.png'"width="50" height="50" rel="external nofollow"/>
-                                        </#if>
-                                    </div>
-                                    <div class="line-right">
-                                        <div class="text">
-                                            <a href="${config.siteUrl}/article/${item.id?c}" data-original-title="${item.lookCount?c}人浏览了该文章" data-toggle="tooltip" data-placement="bottom">
-                                                ${item.title}
-                                            </a>
-                                        </div>
-                                        <div class="text">
-                                            <#--<div style="display: inline-block">热门指数：</div>-->
-                                            <#--<div class="rating ignore" data-star="5"></div>-->
-                                            <span class="views" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="文章阅读次数"><i class="fa fa-eye fa-fw"></i>浏览(${item.lookCount!(0)})</span>
-                                            <span class="comment" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="文章评论次数">
-                                                <a href="${config.siteUrl}/article/${item.id?c}#comment-box" rel="external nofollow">
-                                                    <i class="fa fa-comments-o fa-fw"></i>评论(${item.commentCount!(0)})
-                                                </a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            </#list>
-                        </#if>
-                    </@articleTag>
-                </ul>
-                <div class="clear"></div>
-            </div>
+<#--            <div class="blog-body clear overflow-initial">-->
+<#--                <h5 class="custom-title"><i class="fa fa-fire fa-fw icon"></i><strong>热门推荐</strong><small></small></h5>-->
+<#--                <ul class="list-unstyled">-->
+<#--                    <@articleTag method="hotList" pageSize="10">-->
+<#--                        <#if hotList?? && (hotList?size > 0)>-->
+<#--                            <#list hotList as item>-->
+<#--                            <li class="line-li">-->
+<#--                                <div class="line-container">-->
+<#--                                    <div class="line-left">-->
+<#--                                        <#if item.coverImage??>-->
+<#--                                            <img class="lazy-img" <#if config.lazyloadPath!>data-original<#else>src</#if>="${item.coverImage}" onerror="this.src='${config.staticWebSite}/img/default.png'"width="50" height="50" rel="external nofollow"/>-->
+<#--                                        <#else>-->
+<#--                                            <img class="lazy-img" <#if config.lazyloadPath!>data-original<#else>src</#if>="${config.staticWebSite}/img/favicon.png" onerror="this.src='${config.staticWebSite}/img/default.png'"width="50" height="50" rel="external nofollow"/>-->
+<#--                                        </#if>-->
+<#--                                    </div>-->
+<#--                                    <div class="line-right">-->
+<#--                                        <div class="text">-->
+<#--                                            <a href="${config.siteUrl}/article/${item.id?c}" data-original-title="${item.lookCount?c}人浏览了该文章" data-toggle="tooltip" data-placement="bottom">-->
+<#--                                                ${item.title}-->
+<#--                                            </a>-->
+<#--                                        </div>-->
+<#--                                        <div class="text">-->
+<#--                                            &lt;#&ndash;<div style="display: inline-block">热门指数：</div>&ndash;&gt;-->
+<#--                                            &lt;#&ndash;<div class="rating ignore" data-star="5"></div>&ndash;&gt;-->
+<#--                                            <span class="views" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="文章阅读次数"><i class="fa fa-eye fa-fw"></i>浏览(${item.lookCount!(0)})</span>-->
+<#--                                            <span class="comment" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="文章评论次数">-->
+<#--                                                <a href="${config.siteUrl}/article/${item.id?c}#comment-box" rel="external nofollow">-->
+<#--                                                    <i class="fa fa-comments-o fa-fw"></i>评论(${item.commentCount!(0)})-->
+<#--                                                </a>-->
+<#--                                            </span>-->
+<#--                                        </div>-->
+<#--                                    </div>-->
+<#--                                </div>-->
+<#--                            </li>-->
+<#--                            </#list>-->
+<#--                        </#if>-->
+<#--                    </@articleTag>-->
+<#--                </ul>-->
+<#--                <div class="clear"></div>-->
+<#--            </div>-->
             <#-- 相关文章 -->
-            <div class="blog-body clear overflow-initial">
-                <h5 class="custom-title"><i class="fa fa-google-wallet fa-fw icon"></i><strong>相关文章</strong><small></small></h5>
-                <ul class="list-unstyled">
-                    <#list relatedList as item>
-                        <li class="line-li">
-                            <div class="line-container">
-                                <div class="line-right">
-                                    <div class="text">
-                                        <a href="${config.siteUrl}/article/${item.id?c}" data-original-title="${item.lookCount?c}人浏览了该文章" data-toggle="tooltip" data-placement="bottom">
-                                            <i class="fa fa-book fa-fw"></i>${item.title}
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </#list>
-                </ul>
-                <div class="clear"></div>
-            </div>
+<#--            <div class="blog-body clear overflow-initial">-->
+<#--                <h5 class="custom-title"><i class="fa fa-google-wallet fa-fw icon"></i><strong>相关文章</strong><small></small></h5>-->
+<#--                <ul class="list-unstyled">-->
+<#--                    <#list relatedList as item>-->
+<#--                        <li class="line-li">-->
+<#--                            <div class="line-container">-->
+<#--                                <div class="line-right">-->
+<#--                                    <div class="text">-->
+<#--                                        <a href="${config.siteUrl}/article/${item.id?c}" data-original-title="${item.lookCount?c}人浏览了该文章" data-toggle="tooltip" data-placement="bottom">-->
+<#--                                            <i class="fa fa-book fa-fw"></i>${item.title}-->
+<#--                                        </a>-->
+<#--                                    </div>-->
+<#--                                </div>-->
+<#--                            </div>-->
+<#--                        </li>-->
+<#--                    </#list>-->
+<#--                </ul>-->
+<#--                <div class="clear"></div>-->
+<#--            </div>-->
             <#--评论-->
             <#if article.comment>
                 <div class="blog-body clear overflow-initial expansion">

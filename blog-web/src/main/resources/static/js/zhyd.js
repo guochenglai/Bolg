@@ -206,12 +206,12 @@ $(function () {
     initArticeMenu();
     initScrollMenu();
 
-    console.group("关于OneBlog");
-    console.log("OneBlog，一个简洁美观、功能强大并且自适应的Java博客\n欢迎进QQ交流群（190886500）");
+    console.group("Test01");
+    console.log("TestValue");
     console.groupEnd();
-    console.log("%c生活真他妈好玩，因为生活老他妈玩我！", "color:green;font-size:20px;font-weight:blod");
+    console.log("%cTest02", "color:green;font-size:20px;font-weight:blod");
     console.groupEnd();
-    console.log("爱谁谁...");
+    console.log("TestValue2");
 
     $('.to-top').toTop({
         autohide: true,//返回顶部按钮是否自动隐藏。可以设置true或false。默认为true

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 
-<mapper namespace="com.zyd.blog.persistence.mapper.SysSocialConfigMapper">
-	<resultMap id="rm" type="com.zyd.blog.persistence.beans.SysSocialConfig">
+<mapper namespace="net.gcl.blog.persistence.mapper.SysSocialConfigMapper">
+	<resultMap id="rm" type="net.gcl.blog.persistence.beans.SysSocialConfig">
 		<result property="id" jdbcType="BIGINT" column="id"/>
 		<result property="clientId" jdbcType="VARCHAR" column="client_id"/>
 		<result property="clientSecret" jdbcType="VARCHAR" column="client_secret"/>
@@ -20,7 +20,7 @@
 		<result property="updateTime" jdbcType="TIMESTAMP" column="update_time"/>
 	</resultMap>
 
-	<select id="findPageBreakByCondition" parameterType="com.zyd.blog.business.vo.SocialConfigConditionVO" resultMap="rm">
+	<select id="findPageBreakByCondition" parameterType="net.gcl.blog.business.vo.SocialConfigConditionVO" resultMap="rm">
 		SELECT
 			t.id,
 			t.client_id,

@@ -1,11 +1,11 @@
 <div class="col-sm-3 blog-sidebar">
     <#if articleDetail??>
-        <div class="sidebar-module">
-            <h5 class="custom-title"><i class="fa fa-hand-peace-o fa-fw icon"></i><strong>说给你听</strong><small></small></h5>
-            <div class="div-quote">
-                <i class="fa fa-quote-left fa-fw"></i><p id="hitokoto" style="margin-left: 15px;"></p>
-            </div>
-        </div>
+<#--        <div class="sidebar-module">-->
+<#--            <h5 class="custom-title"><i class="fa fa-hand-peace-o fa-fw icon"></i><strong>说给你听</strong><small></small></h5>-->
+<#--            <div class="div-quote">-->
+<#--                <i class="fa fa-quote-left fa-fw"></i><p id="hitokoto" style="margin-left: 15px;"></p>-->
+<#--            </div>-->
+<#--        </div>-->
     <#else>
 <#--        <div class="sidebar-module" style="position: relative;">-->
 <#--            <h5 class="custom-title"><i class="fa fa-home fa-fw icon"></i><strong>关于我</strong><small></small></h5>-->
@@ -13,7 +13,7 @@
 <#--                <div id="feed_widget">-->
 <#--                    <div class="feed-about">-->
 <#--                        <div class="about-main">-->
-<#--                            <div class="about-img"><a href="${config.wxCode}" class="showImage" title="微信公众号"><img src="${config.wxCode}" alt="微信公众号"></a></div>-->
+<#--                            <div class="about-img"><a href="${config.wxCode}" class="showImage" title="微信号"><img src="${config.wxCode}" alt="微信号"></a></div>-->
 <#--                            <div class="about-name">${config.siteName}</div>-->
 <#--                            <div class="about-the">${config.siteDesc!}</div>-->
 <#--                        </div>-->
@@ -28,6 +28,13 @@
 <#--                                <a class="tag-icon" href="${config.github}" title="点击查看我的github" target="_blank" rel="external nofollow"><i class="fa fa-github"></i></a>-->
 <#--                            </li>-->
 <#--                        </ul>-->
+<#--                        <!-- 方案二：列表展示 &ndash;&gt;-->
+<#--                        &lt;#&ndash;<ul class="list-unstyled">-->
+<#--                            <li><i class="fa fa-info-circle fa-fw"></i>博主：<small>张亚东</small></li>-->
+<#--                            <li><i class="fa fa-user-circle fa-fw"></i>职业：<small>码农</small></li>-->
+<#--                            <li><i class="fa fa-home fa-fw"></i>籍贯：<small>长白山某棵树上</small></li>-->
+<#--                            <li><i class="fa fa-envelope-square fa-fw"></i>邮箱：<small>10000@qq.com</small></li>-->
+<#--                        </ul>&ndash;&gt;-->
 <#--                    </div>-->
 <#--                </div>-->
 <#--            </div>-->

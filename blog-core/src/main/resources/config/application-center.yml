@@ -65,7 +65,7 @@ spring:
 
 # MyBatis
 mybatis:
-  type-aliases-package: com.zyd.blog.persistence.beans
+  type-aliases-package: net.gcl.blog.persistence.beans
   mapper-locations: classpath:/mybatis/*.xml
   configuration:
     default-enum-type-handler: org.apache.ibatis.type.EnumTypeHandler
@@ -73,7 +73,7 @@ mybatis:
 # mapper
 mapper:
   mappers:
-    - com.zyd.blog.plugin.BaseMapper
+    - net.gcl.blog.plugin.BaseMapper
   not-empty: false
   identity: MYSQL
   use-simple-type: false
