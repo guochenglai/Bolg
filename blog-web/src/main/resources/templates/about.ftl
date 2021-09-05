@@ -8,10 +8,6 @@
         <i class="fa fa-angle-right"></i>关于
     </nav>
     <div class="row about-body">
-<#--        <@blogHeader title="关于我"></@blogHeader>-->
-<#--        <#if config.aboutMeHtml?? && (config.aboutMeHtml?length > 0)>-->
-<#--            ${config.aboutMeHtml!}-->
-<#--        <#else >-->
             <div class="col-sm-12 blog-main">
                 <div class="blog-body expansion">
                     <h5 class="custom-title"><i class="fa fa-user-secret fa-fw"></i><strong>博主简介</strong><small></small></h5>
