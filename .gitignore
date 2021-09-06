@@ -2,3 +2,5 @@
 blog.iml
 logdir_IS_UNDEFINED
 .idea
+blog-core/src/main/resources/config
+blog-core/src/main/resources/config/application-center.yml
