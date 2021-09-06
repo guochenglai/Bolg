@@ -68,30 +68,30 @@
                                         </div>
                                     </div>
                                     <div class="item form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="siteUrl">博客地址 <i class="fa fa-question-circle" title="博客前台地址，例如: http://localhost:8443"></i> <span class="required">*</span></label>
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="siteUrl">博客地址 <i class="fa fa-question-circle" title="博客前台地址，例如: http://104.41.185.226:8443"></i> <span class="required">*</span></label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" class="form-control col-md-7 col-xs-12" name="siteUrl" id="siteUrl" required="required" placeholder="例如: http://localhost:8443"/>
+                                            <input type="text" class="form-control col-md-7 col-xs-12" name="siteUrl" id="siteUrl" required="required" placeholder="例如: http://104.41.185.226:8443"/>
                                         </div>
                                     </div>
                                     <div class="item form-group">
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="siteFavicon">站点图标
                                             <i class="fa fa-question-circle" title="favicon，浏览器标签网站标题左侧的图标"></i> <span class="required">*</span></label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" class="form-control col-md-7 col-xs-12" name="siteFavicon" id="siteFavicon" required="required" placeholder="例如：http://localhost:8443/favicon.png"/>
+                                            <input type="text" class="form-control col-md-7 col-xs-12" name="siteFavicon" id="siteFavicon" required="required" placeholder="例如：http://104.41.185.226:8443/favicon.png"/>
                                         </div>
                                     </div>
                                     <div class="item form-group">
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="staticWebSite">资源文件域名
                                             <i class="fa fa-question-circle" title="js、css、img等文件的域名地址，如果是在本项目内，则与“博客地址”设置一样即可"></i> <span class="required">*</span></label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" class="form-control col-md-7 col-xs-12" name="staticWebSite" id="staticWebSite" required="required" placeholder="例如：http://localhost:8443"/>
+                                            <input type="text" class="form-control col-md-7 col-xs-12" name="staticWebSite" id="staticWebSite" required="required" placeholder="例如：http://104.41.185.226:8443"/>
                                         </div>
                                     </div>
 <#--                                    <div class="item form-group">-->
 <#--                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="staticWebSite">管理系统地址-->
-<#--                                            <i class="fa fa-question-circle" title="博客后台管理系统的地址，例如: http://localhost:8085"></i> <span class="required">*</span></label>-->
+<#--                                            <i class="fa fa-question-circle" title="博客后台管理系统的地址，例如: http://104.41.185.226:8085"></i> <span class="required">*</span></label>-->
 <#--                                        <div class="col-md-6 col-sm-6 col-xs-12">-->
-<#--                                            <input type="text" class="form-control col-md-7 col-xs-12" name="cmsUrl" id="cmsUrl" required="required" placeholder="例如: http://localhost:8085"/>-->
+<#--                                            <input type="text" class="form-control col-md-7 col-xs-12" name="cmsUrl" id="cmsUrl" required="required" placeholder="例如: http://104.41.185.226:8085"/>-->
 <#--                                        </div>-->
 <#--                                    </div>-->
 <#--                                    <div class="item form-group">-->
