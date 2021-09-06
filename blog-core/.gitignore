@@ -11,6 +11,7 @@
 .sts4-cache
 
 /src/main/resources/config/application-center.yml
+src/main/resources/config/application-center.yml
 
 ### IntelliJ IDEA ###
 .idea
