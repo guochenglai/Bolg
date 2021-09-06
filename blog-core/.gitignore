@@ -10,6 +10,8 @@
 .springBeans
 .sts4-cache
 
+/src/main/resources/config
+
 /src/main/resources/config/application-center.yml
 src/main/resources/config/application-center.yml
 
