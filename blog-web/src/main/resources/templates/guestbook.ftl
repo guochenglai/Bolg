@@ -1,12 +1,12 @@
 <#include "include/macros.ftl">
 <@compress single_line=false>
-<@header title="留言板 | ${config.siteName}" canonical="/guestbook" hasEditor=true>
+<@header title="MessageBoard | ${config.siteName}" canonical="/guestbook" hasEditor=true>
 </@header>
 
 <div class="container custome-container">
     <nav class="breadcrumb">
-        <a class="crumbs" title="返回首页" href="${config.siteUrl}" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-home"></i>首页</a>
-        <i class="fa fa-angle-right"></i>留言板
+        <a class="crumbs" title="Return To Home" href="${config.siteUrl}" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-home"></i>Home</a>
+        <i class="fa fa-angle-right"></i>MessageBoard
     </nav>
     <div class="row guestbook-body">
         <#if config.comment! && config.comment == 1>

@@ -34,23 +34,23 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="addroleLabel">回复评论</h4>
+                <h4 class="modal-title" id="addroleLabel">ReplayComments</h4>
             </div>
             <div class="modal-body">
                 <form id="replyForm" class="form-horizontal form-label-left" novalidate>
                     <input type="hidden" name="sid" id="sid">
                     <input type="hidden" name="pid" id="pid">
                     <div class="item form-group">
-                        <label class="control-label col-md-2 col-sm-2 col-xs-2" for="description">评论 </label>
+                        <label class="control-label col-md-2 col-sm-2 col-xs-2" for="description">Comments </label>
                         <div class="col-md-9 col-sm-9 col-xs-9">
-                            <textarea class="form-control col-md-12 col-xs-12" rows="10" cols="20" id="content" name="content" placeholder="请输入评论"></textarea>
+                            <textarea class="form-control col-md-12 col-xs-12" rows="10" cols="20" id="content" name="content" placeholder="Please input your comments"></textarea>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-close"> 关闭</i></button>
-                <button type="button" class="btn btn-success replyBtn"><i class="fa fa-mail-reply"> 回复</i></button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-close"> Close</i></button>
+                <button type="button" class="btn btn-success replyBtn"><i class="fa fa-mail-reply"> Replay</i></button>
             </div>
         </div>
     </div>

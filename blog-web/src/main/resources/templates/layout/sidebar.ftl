@@ -47,7 +47,7 @@
         </div>
     </div>
     <div class="sidebar-module">
-        <h5 class="custom-title"><i class="fa fa-tags fa-fw icon"></i><strong>标签</strong><small></small></h5>
+        <h5 class="custom-title"><i class="fa fa-tags fa-fw icon"></i><strong>Labels</strong><small></small></h5>
         <@zhydTag method="tagsList" pageSize="10">
             <#if tagsList?? && (tagsList?size > 0)>
                 <#list tagsList as item>
@@ -61,7 +61,7 @@
     <@zhydTag method="recentComments" pageSize="10">
         <#if recentComments?? && recentComments?size gt 0>
             <div class="sidebar-module">
-                <h5 class="custom-title"><i class="fa fa-comments fa-fw icon"></i><strong>近期评论</strong><small></small></h5>
+                <h5 class="custom-title"><i class="fa fa-comments fa-fw icon"></i><strong>RecentComments</strong><small></small></h5>
                 <ul class="list-unstyled list-inline comments">
                 <#list recentComments as item>
                     <li>
@@ -81,7 +81,7 @@
                                 ${item.briefContent!}
                             </a>
                         </div>
-                        <span class="gray fs12" style="word-break: break-all;">来自：
+                        <span class="gray fs12" style="word-break: break-all;">From
                             <a href="${item.sourceUrl}#comment-${item.id?c}">${item.articleTitle}</a>
                         </span>
                     </li>
@@ -92,7 +92,7 @@
     </@zhydTag>
     <div class="sidebar-module">
         <ul class="nav nav-tabs sidebar-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-list"></i>近期文章</a></li>
+            <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-list"></i>RecentArticles</a></li>
 <#--            <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-thumbs-o-up"></i>站长推荐</a></li>-->
 <#--            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-hand-peace-o"></i>随机文章</a></li>-->
         </ul>
@@ -158,13 +158,13 @@
     </div>
     <div class="clear"></div>
     <div class="sidebar-module">
-        <h5 class="custom-title"><i class="fa fa-info fa-fw icon"></i><strong>网站信息</strong><small></small></h5>
+        <h5 class="custom-title"><i class="fa fa-info fa-fw icon"></i><strong>SiteInfo</strong><small></small></h5>
         <ul class="ul-default site-info">
             <@zhydTag method="siteInfo">
-                <li> <i class="fa fa-file fa-fw"></i>  文章总数：${siteInfo.articleCount!(0)} 篇</li>
-                <li> <i class="fa fa-tags fa-fw"></i> 标签总数：${siteInfo.tagCount!(0)} 个</li>
-                <li> <i class="fa fa-folder-open fa-fw"></i> 分类总数：${siteInfo.typeCount!(0)} 个</li>
-                <li> <i class="fa fa-comments fa-fw"></i> 留言数量：${siteInfo.commentCount!(0)} 条</li>
+                <li> <i class="fa fa-file fa-fw"></i>  TotalArticles：${siteInfo.articleCount!(0)} </li>
+                <li> <i class="fa fa-tags fa-fw"></i> TotalLabels：${siteInfo.tagCount!(0)} </li>
+                <li> <i class="fa fa-folder-open fa-fw"></i> TotalCategories：${siteInfo.typeCount!(0)} </li>
+                <li> <i class="fa fa-comments fa-fw"></i> TotalComments：${siteInfo.commentCount!(0)} </li>
             </@zhydTag>
         </ul>
     </div>

@@ -405,10 +405,10 @@ $(function () {
     /** 初始化评论插件 */
     if($.comment) {
         $.comment.init({
-            placeholder: appConfig.editorPlaceholder || '说点什么吧',
+            placeholder: appConfig.editorPlaceholder || 'Say Something',
             wmName: appConfig.siteName,
             wmUrl: appConfig.wwwPath,
-            wmDesc: appConfig.editorAlert || '讲文明、要和谐'
+            wmDesc: appConfig.editorAlert || ''
         });
         $("#comment-form-btn").click(function () {
             $.comment.submit($(this));

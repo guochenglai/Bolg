@@ -18,7 +18,7 @@
                         <div style="width:100%;text-align: right">
                             <a onclick="javascript:history.go(-1);" style="cursor: pointer" rel="external nofollow">上一页</a>
                             <span class="sepa"></span>
-                            <a href="${config.siteUrl}/" >返回首页</a>
+                            <a href="${config.siteUrl}/" >ReturnHome</a>
                         </div>
                     </div>
                 </div>

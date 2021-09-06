@@ -114,7 +114,7 @@
                     }
                 }, {
                     field: 'comment',
-                    title: '评论',
+                    title: 'Comments',
                     width: '50px',
                     align: 'center',
                     formatter: function (code, row, index) {
@@ -141,7 +141,7 @@
                     }
                 }, {
                     field: 'lookCount',
-                    title: '浏览',
+                    title: 'Views',
                     width: '50px',
                     align: 'center',
                     formatter: function (code) {
@@ -149,7 +149,7 @@
                     }
                 }, {
                     field: 'commentCount',
-                    title: '评论',
+                    title: 'Comments',
                     width: '50px',
                     align: 'center',
                     formatter: function (code) {

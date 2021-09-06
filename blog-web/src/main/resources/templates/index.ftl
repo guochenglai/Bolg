@@ -88,17 +88,17 @@
                                 ${item.description!}
                             </div>
                             <span class="entry-meta">
-                                <span class="date" title="文章发表日期" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-clock-o fa-fw"></i>${item.createTime?string('yyyy-MM-dd')}</span>
-                                <span class="views" title="文章阅读次数" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-eye fa-fw"></i>浏览(${item.lookCount!(0)})</span>
-                                <span class="comment" title="文章评论次数" data-toggle="tooltip" data-placement="bottom">
+                                <span class="date" title="Release Date" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-clock-o fa-fw"></i>${item.createTime?string('yyyy-MM-dd')}</span>
+                                <span class="views" title="View Count" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-eye fa-fw"></i>Views(${item.lookCount!(0)})</span>
+                                <span class="comment" title="Comment Count" data-toggle="tooltip" data-placement="bottom">
                                     <a href="${config.siteUrl}/article/${item.id?c}#comment-box" rel="external nofollow">
-                                        <i class="fa fa-comments-o fa-fw"></i>评论(${item.commentCount!(0)})
+                                        <i class="fa fa-comments-o fa-fw"></i>Comments(${item.commentCount!(0)})
                                     </a>
                                 </span>
                             </span>
                             <div class="clear"></div>
                             <span class="entry-more">
-                                <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark" title="点击查看文章详情" data-toggle="tooltip" data-placement="bottom">阅读全文</a>
+                                <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark" title="Read Full Article" data-toggle="tooltip" data-placement="bottom">ReadMore</a>
                             </span>
                         </div>
                     </article>

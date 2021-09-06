@@ -75,14 +75,14 @@
                             <div class="clear"></div>
                         </div>
                     </div>
-                    <div class="article-footer overflow-initial">所属分类：<a href="${config.siteUrl}/type/${article.typeId}" data-original-title="点击查看${article.type.name}分类的文章" data-toggle="tooltip" data-placement="bottom">${article.type.name}</a></div>
+                    <div class="article-footer overflow-initial">Category：<a href="${config.siteUrl}/type/${article.typeId}" data-original-title="点击查看${article.type.name}分类的文章" data-toggle="tooltip" data-placement="bottom">${article.type.name}</a></div>
                 </div>
             </div>
             <div class="blog-body article-tag">
                 <div class="cat">
                     <ul class="list-unstyled">
                         <li>
-                            <strong>本文标签：</strong>
+                            <strong>Labels：</strong>
                                 <#if article.tags?? && article.tags?size gt 0>
                                     <#list article.tags as item>
                                         <a href="${config.siteUrl}/tag/${item.id?c}" class="c-label" data-original-title="${item.name}" data-toggle="tooltip" data-placement="bottom" target="_blank">${item.name}</a>
@@ -111,95 +111,33 @@
                 <nav class="nav-single wow" data-wow-delay="0.3s">
                     <#if other.prev>
                         <a href="${config.siteUrl}/article/${other.prev.id?c}" rel="prev">
-                            <span class="meta-nav" data-original-title="${other.prev.title}" data-toggle="tooltip" data-placement="bottom"><span class="post-nav"><i class="fa fa-angle-left"></i> 上一篇</span>
+                            <span class="meta-nav" data-original-title="${other.prev.title}" data-toggle="tooltip" data-placement="bottom"><span class="post-nav"><i class="fa fa-angle-left"></i> Previous</span>
                                 <br>${other.prev.title}
                             </span>
                         </a>
                     <#else >
                         <a href="javascript:void(0)" rel="nofollow prev">
-                            <span class="meta-nav" data-original-title="已经到第一篇了" data-toggle="tooltip" data-placement="bottom"><span class="post-nav"><i class="fa fa-angle-left"></i> 上一篇</span>
-                                <br>已经到第一篇了
+                            <span class="meta-nav" data-original-title="It's already the first one" data-toggle="tooltip" data-placement="bottom"><span class="post-nav"><i class="fa fa-angle-left"></i> Previous</span>
+                                <br>It's already the first one
                             </span>
                         </a>
                     </#if>
                     <#if other.next>
                         <a href="${config.siteUrl}/article/${other.next.id?c}" rel="next">
-                            <span class="meta-nav" data-original-title="${other.next.title}" data-toggle="tooltip" data-placement="bottom"><span class="post-nav">下一篇 <i class="fa fa-angle-right"></i></span>
+                            <span class="meta-nav" data-original-title="${other.next.title}" data-toggle="tooltip" data-placement="bottom"><span class="post-nav">Next <i class="fa fa-angle-right"></i></span>
                                 <br>${other.next.title}
                             </span>
                         </a>
                     <#else >
                         <a href="${config.siteUrl}/article/1" rel="nofollow next">
-                            <span class="meta-nav" data-original-title="已经到最后一篇了" data-toggle="tooltip" data-placement="bottom"><span class="post-nav">下一篇 <i class="fa fa-angle-right"></i></span>
-                                <br>已经到最后一篇了
+                            <span class="meta-nav" data-original-title="It's already the last one" data-toggle="tooltip" data-placement="bottom"><span class="post-nav">Next <i class="fa fa-angle-right"></i></span>
+                                <br>It's already the last one
                             </span>
                         </a>
                     </#if>
                     <div class="clear"></div>
                 </nav>
             </div>
-            <#-- 热门推荐 -->
-<#--            <div class="blog-body clear overflow-initial">-->
-<#--                <h5 class="custom-title"><i class="fa fa-fire fa-fw icon"></i><strong>热门推荐</strong><small></small></h5>-->
-<#--                <ul class="list-unstyled">-->
-<#--                    <@articleTag method="hotList" pageSize="10">-->
-<#--                        <#if hotList?? && (hotList?size > 0)>-->
-<#--                            <#list hotList as item>-->
-<#--                            <li class="line-li">-->
-<#--                                <div class="line-container">-->
-<#--                                    <div class="line-left">-->
-<#--                                        <#if item.coverImage??>-->
-<#--                                            <img class="lazy-img" <#if config.lazyloadPath!>data-original<#else>src</#if>="${item.coverImage}" onerror="this.src='${config.staticWebSite}/img/default.png'"width="50" height="50" rel="external nofollow"/>-->
-<#--                                        <#else>-->
-<#--                                            <img class="lazy-img" <#if config.lazyloadPath!>data-original<#else>src</#if>="${config.staticWebSite}/img/favicon.png" onerror="this.src='${config.staticWebSite}/img/default.png'"width="50" height="50" rel="external nofollow"/>-->
-<#--                                        </#if>-->
-<#--                                    </div>-->
-<#--                                    <div class="line-right">-->
-<#--                                        <div class="text">-->
-<#--                                            <a href="${config.siteUrl}/article/${item.id?c}" data-original-title="${item.lookCount?c}人浏览了该文章" data-toggle="tooltip" data-placement="bottom">-->
-<#--                                                ${item.title}-->
-<#--                                            </a>-->
-<#--                                        </div>-->
-<#--                                        <div class="text">-->
-<#--                                            &lt;#&ndash;<div style="display: inline-block">热门指数：</div>&ndash;&gt;-->
-<#--                                            &lt;#&ndash;<div class="rating ignore" data-star="5"></div>&ndash;&gt;-->
-<#--                                            <span class="views" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="文章阅读次数"><i class="fa fa-eye fa-fw"></i>浏览(${item.lookCount!(0)})</span>-->
-<#--                                            <span class="comment" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="文章评论次数">-->
-<#--                                                <a href="${config.siteUrl}/article/${item.id?c}#comment-box" rel="external nofollow">-->
-<#--                                                    <i class="fa fa-comments-o fa-fw"></i>评论(${item.commentCount!(0)})-->
-<#--                                                </a>-->
-<#--                                            </span>-->
-<#--                                        </div>-->
-<#--                                    </div>-->
-<#--                                </div>-->
-<#--                            </li>-->
-<#--                            </#list>-->
-<#--                        </#if>-->
-<#--                    </@articleTag>-->
-<#--                </ul>-->
-<#--                <div class="clear"></div>-->
-<#--            </div>-->
-            <#-- 相关文章 -->
-<#--            <div class="blog-body clear overflow-initial">-->
-<#--                <h5 class="custom-title"><i class="fa fa-google-wallet fa-fw icon"></i><strong>相关文章</strong><small></small></h5>-->
-<#--                <ul class="list-unstyled">-->
-<#--                    <#list relatedList as item>-->
-<#--                        <li class="line-li">-->
-<#--                            <div class="line-container">-->
-<#--                                <div class="line-right">-->
-<#--                                    <div class="text">-->
-<#--                                        <a href="${config.siteUrl}/article/${item.id?c}" data-original-title="${item.lookCount?c}人浏览了该文章" data-toggle="tooltip" data-placement="bottom">-->
-<#--                                            <i class="fa fa-book fa-fw"></i>${item.title}-->
-<#--                                        </a>-->
-<#--                                    </div>-->
-<#--                                </div>-->
-<#--                            </div>-->
-<#--                        </li>-->
-<#--                    </#list>-->
-<#--                </ul>-->
-<#--                <div class="clear"></div>-->
-<#--            </div>-->
-            <#--评论-->
             <#if article.comment>
                 <div class="blog-body clear overflow-initial expansion">
                     <div id="comment-box" data-id="${article.id?c}"></div>
