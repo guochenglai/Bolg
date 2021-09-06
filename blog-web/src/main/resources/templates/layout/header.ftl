@@ -10,20 +10,6 @@
             <ul class="list-unstyled list-inline pull-left">
                 <li><a href="${config.siteUrl}/about" class="menu_a" title="AboutMe" data-toggle="tooltip" data-placement="bottom">AboutMe</a></li>
             </ul>
-            <#if user??>
-                <ul class="list-unstyled list-inline nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle menu_a" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-user fa-fw"></i>${user.username!} <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="/oauth/logout"><i class="fa fa-sign-out"></i>退出</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            <#else>
-                <ul class="list-unstyled list-inline pull-left">
-<#--                    <li><a href="javascript:;;" data-toggle="modal" data-target="#oauth" rel="nofollow" title="授权登录">登录</a></li>-->
-                </ul>
-            </#if>
         </div>
     </div>
 </nav>
@@ -32,36 +18,8 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-<#--                <ul class="list-inline">-->
-<#--                    <li><h4 class="modal-title" id="oauthTitle">登录</h4></li>-->
-<#--                    <li><a href="javascript:$.alert.info('没用，别点了！我就没打算开发这个功能。Just to show you~~~');"><h4 class="modal-title" id="myModalLabel">注册</h4></a></li>-->
-<#--                </ul>-->
             </div>
             <div class="modal-body">
-<#--                <div class="oauth">-->
-<#--                    <ul class="list-unstyled list-inline oauth-list">-->
-<#--                        <@zhydTag method="listAvailableOAuthPlatforms">-->
-<#--                            <#if listAvailableOAuthPlatforms?? && listAvailableOAuthPlatforms?size gt 0>-->
-<#--                                <#list listAvailableOAuthPlatforms as item>-->
-<#--                                    <li>-->
-<#--                                        <a href="${config.siteUrl}/oauth/social/${item.platform}" target="">-->
-<#--                                            <img src="${item.logo}" alt="" class="img-circle">-->
-<#--                                        </a>-->
-<#--                                    </li>-->
-<#--                                </#list>-->
-<#--                            <#else>-->
-<#--                                <li>-->
-<#--                                    稍等一下， 博主正在快马加鞭的配置~~-->
-<#--                                </li>-->
-<#--                            </#if>-->
-<#--                        </@zhydTag>-->
-<#--                    </ul>-->
-<#--                    <div class="oauth-line">-->
-<#--                        <span style="font-size: 12px">-->
-<#--                            Powered by <a href="https://gitee.com/fujieid/jap" target="_blank">JustAuthPlus(JAP)</a>-->
-<#--                        </span>-->
-<#--                    </div>-->
-<#--                </div>-->
             </div>
         </div>
     </div>
