@@ -102,7 +102,7 @@
                             </#list>
                         <#else>
                             <li class="empty-list">
-                                <i class="fa fa-bookmark-o fa-fw"></i> 暂无相关文章
+                                <i class="fa fa-bookmark-o fa-fw"></i> No relevant articles
                             </li>
                         </#if>
                     </@articleTag>
@@ -121,7 +121,7 @@
                             </#list>
                         <#else>
                             <li class="empty-list">
-                                <i class="fa fa-bookmark-o fa-fw"></i> 暂无相关文章
+                                <i class="fa fa-bookmark-o fa-fw"></i> No relevant articles
                             </li>
                         </#if>
                     </@articleTag>
@@ -140,7 +140,7 @@
                             </#list>
                         <#else>
                             <li class="empty-list">
-                                <i class="fa fa-bookmark-o fa-fw"></i> 暂无相关文章
+                                <i class="fa fa-bookmark-o fa-fw"></i> No relevant articles
                             </li>
                         </#if>
                     </@articleTag>
