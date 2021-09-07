@@ -75,7 +75,7 @@ $.extend({
                 toolbar: ["bold", "italic", "|", "code", "quote", "|", "preview", "|", "guide"],
                 autoDownloadFontAwesome: false,
                 // autofocus: true,
-                placeholder: options.placeholder || "Say ",
+                placeholder: options.placeholder || "Say Something",
                 renderingConfig: {
                     codeSyntaxHighlighting: true
                 },

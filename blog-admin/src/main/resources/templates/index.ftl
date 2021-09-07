@@ -40,7 +40,7 @@
         }
 
         .recentArticles th.title div{
-            width: 400px;
+            width: 200px;
         }
 
         .recentComments .content{

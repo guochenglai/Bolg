@@ -408,7 +408,7 @@ $(function () {
             placeholder: appConfig.editorPlaceholder || 'Say Something',
             wmName: appConfig.siteName,
             wmUrl: appConfig.wwwPath,
-            wmDesc: appConfig.editorAlert || ''
+            wmDesc: appConfig.editorAlert || 'Be Civilization and Harmony'
         });
         $("#comment-form-btn").click(function () {
             $.comment.submit($(this));
