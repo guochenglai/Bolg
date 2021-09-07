@@ -40,8 +40,8 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <div class="pull-left site-desc">
-                <h1 class="auto-shake"><a href="${config.siteUrl}" data-original-title="${config.siteDesc}" data-toggle="tooltip" data-placement="bottom">${config.siteName}</a></h1>
-                <p class="site-description">${config.siteDesc}</p>
+                <h1 class="auto-shake"><a href="${config.siteUrl}" data-original-title="${config.siteDesc}" data-toggle="tooltip" data-placement="bottom">语言</a></h1>
+                <p class="site-description">心之所向，无所不成</p>
             </div>
             <ul class="nav navbar-nav ">
                 <li>
