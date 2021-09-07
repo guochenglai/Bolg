@@ -103,7 +103,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-close"> 关闭</i></button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-close"> Close</i></button>
                 <button type="button" class="btn btn-success auditBtn"><i class="fa fa-hand-o-up"> 提交审核</i></button>
             </div>
         </div>

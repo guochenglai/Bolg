@@ -117,7 +117,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-close"> 关闭</i>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-close"> Close</i>
                     </button>
                     <button type="button" class="btn btn-primary" id="updPassBtn">修改密码</button>
                 </div>

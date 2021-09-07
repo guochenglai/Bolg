@@ -92,7 +92,7 @@
         <div class="modal-content">
             <div class="modal-body" style="overflow: hidden">
                 <div class="alert alert-warning" role="alert">
-                    <i class="fa fa-lightbulb-o"></i>友情提示：评论审核通过后会自动发布！
+                    <i class="fa fa-lightbulb-o"></i>Reminder: Comments will auto publish after approve！
                 </div>
                 <form class="form-horizontal col-sm-12" role="form" action="/api/autoLink" method="post" id="autoLinkForm" style="padding-left: 15px;">
                     <div class="form-group has-info">

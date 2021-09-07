@@ -1,9 +1,6 @@
 <#include "include/macros.ftl">
 <@compress single_line=false>
-<@header title="${config.siteName!} | 心之所向，无所不成"
-    keywords="${config.homeKeywords!}"
-    description="${config.homeDesc!}"
-    canonical="/${url!}">
+<@header title="${config.siteName!} | 心之所向，无所不成">
 </@header>
 
 <div class="container custome-container">

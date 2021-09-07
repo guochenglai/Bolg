@@ -354,7 +354,7 @@
             </div>
             <div class="modal-footer">
                 <a type="button" class="btn btn-danger stopBtn hide"><i class="fa fa-stop-circle-o"> 停止</i></a>
-                <a type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-close"> 关闭</i></a>
+                <a type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-close"> Close</i></a>
             </div>
         </div>
     </div>

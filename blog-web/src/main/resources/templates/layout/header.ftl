@@ -8,7 +8,7 @@
         </div>
         <div class="menu-topmenu-container pull-right">
             <ul class="list-unstyled list-inline pull-left">
-                <li><a href="${config.siteUrl}/about" class="menu_a" title="AboutMe" data-toggle="tooltip" data-placement="bottom">AboutMe</a></li>
+                <li><a href="${config.siteUrl}/about" class="menu_a" data-toggle="tooltip" data-placement="bottom">AboutMe</a></li>
             </ul>
         </div>
     </div>

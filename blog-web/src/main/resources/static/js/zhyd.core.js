@@ -187,7 +187,7 @@
                 delayTime = delayTime ? "confirm|" + delayTime : "confirm|3000";
                 $.jqAlert({
                     icon: 'fa fa-info-circle',
-                    title: '友情提示',
+                    title: 'Reminder',
                     content: content,
                     type: 'green',
                     typeAnimated: true,

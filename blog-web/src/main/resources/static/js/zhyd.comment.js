@@ -58,7 +58,7 @@ $.extend({
                     + '<input type="hidden" name="pid" id="comment-pid" value="0" size="22" tabindex="1">'
                     + '<textarea id="comment_content" class="form-control col-md-7 col-xs-12 valid" style="display: none"></textarea>'
                     + '<textarea name="content" style="display: none"></textarea>'
-                    + '<div style="position: absolute;right: 10px;bottom: 70px;font-size: 14px;color: #dbdada;z-index: 1;">' + op.wmName + '<br>' + op.wmUrl + '<br>' + op.wmDesc + '</div>'
+                    + '<div style="position: absolute;right: 10px;bottom: 70px;font-size: 14px;color: #dbdada;z-index: 1;"><br><br><br><br>' + op.wmDesc + '</div>'
                     + '<a id="comment-form-btn" type="button" data-loading-text="Submiting Commenting..." class="btn btn-default btn-block">SubmitComment</a>'
                     + '</form></div></div>';
             $box.html(commentBox);

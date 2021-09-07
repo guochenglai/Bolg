@@ -47,7 +47,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-close"> 关闭</i></button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-close"> Close</i></button>
             </div>
         </div>
     </div>

@@ -332,7 +332,7 @@
                                         <div class="col-md-6 col-sm-6 col-xs-12 fixed-radio-checkbox">
                                             <ul class="list-unstyled list-inline">
                                                 <li><label for="anonymous" class="pointer"> <input type="radio" class="square" checked name="anonymous" value="1"> 开启 </label></li>
-                                                <li><label for="anonymous" class="pointer"> <input type="radio" class="square" name="anonymous" value="0"> 关闭 </label></li>
+                                                <li><label for="anonymous" class="pointer"> <input type="radio" class="square" name="anonymous" value="0"> Close </label></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -341,7 +341,7 @@
                                         <div class="col-md-6 col-sm-6 col-xs-12 fixed-radio-checkbox">
                                             <ul class="list-unstyled list-inline">
                                                 <li><label for="comment" class="pointer"> <input type="radio" class="square" checked name="comment" value="1"> 开启 </label></li>
-                                                <li><label for="comment" class="pointer"> <input type="radio" class="square" name="comment" value="0"> 关闭 </label></li>
+                                                <li><label for="comment" class="pointer"> <input type="radio" class="square" name="comment" value="0"> Close </label></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -362,7 +362,7 @@
                                     <div class="item form-group">
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="comment"></label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <button type="button" class="btn btn-primary saveBtn"><i class="fa fa-save"> 保存</i></button>
+                                            <button type="button" class="btn btn-primary saveBtn"><i class="fa fa-save"> Save</i></button>
                                         </div>
                                     </div>
                                 </form>
@@ -482,7 +482,7 @@
                                         <div class="col-md-6 col-sm-6 col-xs-12 fixed-radio-checkbox">
                                             <ul class="list-unstyled list-inline">
                                                 <li><label for="maintenance" class="pointer"> <input type="radio" class="square" checked name="maintenance" value="1"> 显示 </label> </li>
-                                                <li><label for="maintenance" class="pointer"> <input type="radio" class="square" name="maintenance" value="0"> 关闭 </label></li>
+                                                <li><label for="maintenance" class="pointer"> <input type="radio" class="square" name="maintenance" value="0"> Close </label></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -658,7 +658,7 @@
                 </pre>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -702,7 +702,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
