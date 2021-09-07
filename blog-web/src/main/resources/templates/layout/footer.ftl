@@ -48,19 +48,15 @@
 <#--                        <span class="fa fa-qq pull-left" aria-hidden="true">QQ</span>-->
 <#--                    </div>-->
                     <div class="form-group input-logo">
-                        <input type="text" class="form-control" name="nickname" placeholder="必填" value="匿名">
-                        <span class="fa fa-user pull-left" aria-hidden="true">昵称</span>
+                        <input type="text" class="form-control" name="nickname" placeholder="必填" value="anonymous">
+                        <span class="fa fa-user pull-left" aria-hidden="true">Name</span>
                     </div>
                     <div class="form-group input-logo">
                         <input type="text" class="form-control" name="email" placeholder="选填">
-                        <span class="fa fa-envelope pull-left" aria-hidden="true">邮箱</span>
+                        <span class="fa fa-envelope pull-left" aria-hidden="true">Mail</span>
                     </div>
-<#--                    <div class="form-group input-logo">-->
-<#--                        <input type="text" class="form-control" name="url" placeholder="选填">-->
-<#--                        <span class="fa fa-globe pull-left" aria-hidden="true">网址</span>-->
-<#--                    </div>-->
                     <div class="form-group">
-                        <button type="button" class="btn btn-default btn-sm" id="detail-form-btn"><i class="fa fa-smile-o"></i>提交</button>
+                        <button type="button" class="btn btn-default btn-sm" id="detail-form-btn"><i class="fa fa-smile-o"></i>Submit</button>
                     </div>
                 </form>
             </div>

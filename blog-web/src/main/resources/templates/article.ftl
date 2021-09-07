@@ -6,31 +6,31 @@
 </#if>
 <div class="container custome-container">
     <nav class="breadcrumb">
-        <a class="crumbs" title="返回首页" href="${config.siteUrl}" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-home"></i>首页</a>
+        <a class="crumbs" href="${config.siteUrl}" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-home"></i>Home</a>
         <i class="fa fa-angle-right"></i>
-        <a href="${config.siteUrl}/type/${article.typeId}" title="点击查看该分类文章" data-toggle="tooltip" data-placement="bottom">${article.type.name}</a>
-        <i class="fa fa-angle-right"></i>正文
+        <a href="${config.siteUrl}/type/${article.typeId}" data-toggle="tooltip" data-placement="bottom">${article.type.name}</a>
+        <i class="fa fa-angle-right"></i>Text
     </nav>
     <div class="row article-body">
         <div class="col-sm-8 blog-main">
             <div class="blog-body overflow-initial fade-in">
                 <div class="article-flag">
                     <#if article.original?string('true','false') == 'true'>
-                        <span class="article-blockquote article-blockquote-green"></span>
-                        <span class="article-original article-original-green">
-                            <a href="${config.siteUrl}/article/${article.id}"><i class="fa fa-check"></i> 原创</a>
-                        </span>
+<#--                        <span class="article-blockquote article-blockquote-green"></span>-->
+<#--                        <span class="article-original article-original-green">-->
+<#--                            <a href="${config.siteUrl}/article/${article.id}"><i class="fa fa-check"></i> 原创</a>-->
+<#--                        </span>-->
                     <#else>
-                        <span class="article-blockquote article-blockquote-gray"></span>
-                        <span class="article-original article-original-gray">
-                            <a href="${config.siteUrl}/article/${article.id}"><i class="fa fa-reply"></i> 转载</a>
-                        </span>
+<#--                        <span class="article-blockquote article-blockquote-gray"></span>-->
+<#--                        <span class="article-original article-original-gray">-->
+<#--                            <a href="${config.siteUrl}/article/${article.id}"><i class="fa fa-reply"></i> 转载</a>-->
+<#--                        </span>-->
                     </#if>
                     <div class="blog-info-meta pull-right">
                         <ul class="list-unstyled list-inline">
                             <li><i class="fa fa-clock-o fa-fw"></i>${article.createTime?string('yyyy-MM-dd')}</li>
-                            <li><i class="fa fa-eye fa-fw"></i><a class="pointer" data-original-title="${article.lookCount!(0)}人浏览了该文章" data-toggle="tooltip" data-placement="bottom">浏览 (<num>${article.lookCount!(0)}</num>)</a></li>
-                            <li><a href="#comment-box" data-original-title="${article.commentCount!(0)}人评论了该文章" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-comments-o fa-fw"></i>评论 (${article.commentCount!(0)})</a></li>
+                            <li><i class="fa fa-eye fa-fw"></i><a class="pointer" data-original-title="${article.lookCount!(0)} Comments" data-toggle="tooltip" data-placement="bottom">Views (<num>${article.lookCount!(0)}</num>)</a></li>
+                            <li><a href="#comment-box" data-original-title="${article.commentCount!(0)} views" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-comments-o fa-fw"></i>Comments (${article.commentCount!(0)})</a></li>
                         </ul>
                     </div>
                 </div>

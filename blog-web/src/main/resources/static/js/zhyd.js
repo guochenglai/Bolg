@@ -246,7 +246,7 @@ $(function () {
     function getCurrentDate() {
         var now = new Date();
         var weekArr = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-        $("#currentTime").html(now.format('hh:mm:ss yyyy/MM/dd ') + " " + weekArr[now.getDay()]);
+        $("#currentTime").html(now.format('yyyy/MM/dd hh:mm:ss') + " " + weekArr[now.getDay()]);
     }
 
     if ($.websocket) {

@@ -104,11 +104,11 @@ $.extend({
                     var commentListBox  = '';
                     if(!commentList){
                         commentListBox = '<div class="commentList">'
-                                + '<h5 class="custom-title"><i class="fa fa-comments-o fa-fw icon"></i><strong>0 评论</strong><small></small></h5>'
+                                + '<h5 class="custom-title"><i class="fa fa-comments-o fa-fw icon"></i><strong>0 Comments</strong><small></small></h5>'
                                 + '<ul class="comment">';
                         commentListBox += '<li><div class="list-comment-empty-w fade-in">'
                                 +'<div class="empty-prompt-w">'
-                                +'<span class="prompt-null-w">还没有评论，快来抢沙发吧！</span>'
+                                +'<span class="prompt-null-w">To Be The First One !</span>'
                                 +'</div>'
                                 +'</div></li>';
                         // 加载 评论列表 end
@@ -118,7 +118,7 @@ $.extend({
                         // 首次加载-刷新页面后第一次加载，此时没有点击加载更多进行分页
                         if(!pageNumber) {
                             commentListBox = '<div class="commentList">'
-                                    + '<h5 class="custom-title"><i class="fa fa-comments-o fa-fw icon"></i><strong>' + json.data.total + ' 评论</strong><small></small></h5>'
+                                    + '<h5 class="custom-title"><i class="fa fa-comments-o fa-fw icon"></i><strong>' + json.data.total + ' Comments</strong><small></small></h5>'
                                     + '<ul class="comment">';
                         }
                         for(var i = 0, len = commentList.length; i < len ; i ++){
@@ -150,10 +150,9 @@ $.extend({
                                     '        </div>' +
                                     '        <div class="content">' + parentQuote + '<div style="word-break: break-all;">' + filterXSS(comment.content) + '</div></div>' +
                                     '        <div class="sign">' +
-                                    '            <a href="javascript:void(0);" class="comment-up" onclick="$.comment.praise(' + comment.id + ', this)"><i class="fa fa-thumbs-o-up"></i>赞(<span class="count">' + comment.support + '</span>)<i class="sepa"></i></a>' +
-                                    '            <a href="javascript:void(0);" class="comment-down" onclick="$.comment.step(' + comment.id + ', this)"><i class="fa fa-thumbs-o-down"></i>踩(<span class="count">' + comment.oppose + '</span>)<i class="sepa"></i></a>' +
-                                    '            <a href="javascript:void(0);" class="comment-reply" onclick="$.comment.reply(' + comment.id + ', this)"><i class="fa fa-reply"></i>回复</a>' +
-                                    '            <a href="javascript:void(0);" class="comment-flag hide" onclick="$.comment.report(' + comment.id + ', this)"><i class="fa fa-flag"></i>举报</a>' +
+                                    '            <a href="javascript:void(0);" class="comment-up" onclick="$.comment.praise(' + comment.id + ', this)"><i class="fa fa-thumbs-o-up"></i>ThumbUp(<span class="count">' + comment.support + '</span>)<i class="sepa"></i></a>' +
+                                    '            <a href="javascript:void(0);" class="comment-down" onclick="$.comment.step(' + comment.id + ', this)"><i class="fa fa-thumbs-o-down"></i>ThumbDown(<span class="count">' + comment.oppose + '</span>)<i class="sepa"></i></a>' +
+                                    '            <a href="javascript:void(0);" class="comment-reply" onclick="$.comment.reply(' + comment.id + ', this)"><i class="fa fa-reply"></i>Replay</a>' +
                                     '        </div>' +
                                     '    </div>' +
                                     '</li>';
@@ -162,7 +161,7 @@ $.extend({
                         if(json.data.hasNextPage){
                             commentListBox += '<li><div class="list-comment-empty-w fade-in">'
                                     +'<div class="empty-prompt-w">'
-                                    +'<span class="prompt-null-w pointer load-more">加载更多 <i class="fa fa-angle-double-down"></i></span>'
+                                    +'<span class="prompt-null-w pointer load-more">Load More <i class="fa fa-angle-double-down"></i></span>'
                                     +'</div>'
                                     +'</div></li>';
                         }

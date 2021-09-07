@@ -11,8 +11,7 @@
                             <div class="col-middle">
                                 <div class="text-center text-center">
                                     <h1 class="error-number">500</h1>
-                                    <h2>内部服务器错误</h2>
-                                    <p>我们会自动跟踪这些错误，但如果问题仍然存在，请随时联系我们。同时，您可以尝试重试。</p>
+                                    <h2>Unknown Error</h2>
                                     <div class="mid_center">
                                         <form>
                                             <div class="col-xs-12 form-group pull-right top_search">

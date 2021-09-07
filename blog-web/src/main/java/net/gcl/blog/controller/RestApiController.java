@@ -80,7 +80,7 @@ public class RestApiController {
             return ResultUtil.error("");
         }
         Map<String, String> resultMap = new HashMap<>(4);
-        String nickname = "匿名";
+        String nickname = "Anonymous";
         String json = RestClientUtil.get("https://users.qzone.qq.com/fcg-bin/cgi_get_portrait.fcg?uins=" + qq, "GBK");
         if (!StringUtils.isEmpty(json)) {
             try {

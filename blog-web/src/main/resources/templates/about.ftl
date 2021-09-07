@@ -1,10 +1,10 @@
 <#include "include/macros.ftl">
 <@compress single_line=false>
-<@header title="关于 | ${config.siteName}" description="关于${config.siteName}" canonical="/about"></@header>
+<@header title="About | ${config.siteName}" description="About${config.siteName}" canonical="/about"></@header>
 <div class="container custome-container">
     <nav class="breadcrumb">
-        <a class="crumbs" title="返回首页" href="${config.siteUrl}" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-home"></i>首页</a>
-        <i class="fa fa-angle-right"></i>关于
+        <a class="crumbs" href="${config.siteUrl}" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-home"></i>Home</a>
+        <i class="fa fa-angle-right"></i>About
     </nav>
     <div class="row about-body">
             <div class="col-sm-12 blog-main">
@@ -19,14 +19,12 @@
                             </td>
                             <td valign="top">
                                 <div class="info" style="float:left;margin-left:10px;">
-                                    姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名&nbsp;&nbsp;:&nbsp;&nbsp;郭承来<br>
-                                    工作经历&nbsp;&nbsp;:<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;2014-05&nbsp;–&nbsp;2017-05&nbsp;&nbsp;去哪儿网<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;2017-05&nbsp;–&nbsp;2021-07&nbsp;&nbsp;阿里云<br>
+                                    Name:&nbsp;&nbsp;:&nbsp;&nbsp;郭承来<br>
+                                    Working Experience&nbsp;&nbsp;:<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;2014-05&nbsp;–&nbsp;2017-05&nbsp;&nbsp;Qunar.com<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;2017-05&nbsp;–&nbsp;2021-07&nbsp;&nbsp;Alibaba Cloud<br>
                                     &nbsp;&nbsp;&nbsp;&nbsp;2017-07&nbsp;–&nbsp;Present&nbsp;&nbsp;Microsoft<br>
-                                    简&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;介&nbsp;&nbsp;:<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;改过很多版本，空白是最好的阐释。<br>
-                                    说&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;明&nbsp;&nbsp;:<br>
+                                    Intro:&nbsp;&nbsp;:<br>
                                     &nbsp;&nbsp;&nbsp;&nbsp;If you have any questions, please contact: gcl272633743@163.com<br>
                                 </div>
                             </td>

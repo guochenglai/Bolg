@@ -1,36 +1,23 @@
-<#include "/include/macros.ftl">
-<@header></@header>
-    <div class="clearfix"></div>
+<#include "include/macros.ftl">
+<@header title="Page Not Found :("></@header>
+<div class="container custome-container">
     <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-            <@breadcrumb></@breadcrumb>
-            <div class="x_panel">
-                <div class="x_content">
-                    <div class="main_container">
-                        <div class="col-md-12">
-                            <div class="col-middle">
-                                <div class="text-center text-center">
-                                    <h1 class="error-number">404</h1>
-                                    <h2>抱歉，我们找不到这个页面</h2>
-                                    <p>This page you are looking for does not exist。</p>
-                                    <div class="mid_center">
-                                        <form>
-                                            <div class="col-xs-12 form-group pull-right top_search">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Search for..."> <span
-                                                        class="input-group-btn">
-                                                          <a class="btn btn-default" href="javascript:history.go(-1);">Go!</a>
-                                                      </span>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 blog-main">
+            <div class="blog-body">
+                <div class="error-container">
+                    <div class="h1">
+                        <strong>Not found</strong> <span frown>:(</span>
+                    </div>
+                    <div>
+                        <p class="h4">Sorry the page you are looking for does not exists</p>
+                        <p class="h4">Please Contract: gcl272633743@163.com</p>
+                        <div style="width:100%;text-align: right">
+                            <p class="h4"><a href="${config.siteUrl}/" >ReturnHome</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 <@footer></@footer>

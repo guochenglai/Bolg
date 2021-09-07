@@ -67,14 +67,14 @@
                             </figure>
                         </#if>
                         <header class="entry-header">
-                            <#if item.original?string('true','false') == 'true'>
-                                <span class="art art-original"><i class="fa fa-check fa-fw"></i>原创</span>
-                            <#else>
-                                <span class="art art-original-0"><i class="fa fa-reply fa-fw"></i>转载</span>
-                            </#if>
-                            <#if item.private>
-                                <span class="art art-type art-type-yellow"><i class="fa fa-lock fa-fw"></i>私密</span>
-                            </#if>
+<#--                            <#if item.original?string('true','false') == 'true'>-->
+<#--                                <span class="art art-original"><i class="fa fa-check fa-fw"></i>原创</span>-->
+<#--                            <#else>-->
+<#--                                <span class="art art-original-0"><i class="fa fa-reply fa-fw"></i>转载</span>-->
+<#--                            </#if>-->
+<#--                            <#if item.private>-->
+<#--                                <span class="art art-type art-type-yellow"><i class="fa fa-lock fa-fw"></i>私密</span>-->
+<#--                            </#if>-->
                             <#if item.top>
                                 <span class="art art-top"><i class="fa fa-chevron-circle-up fa-fw"></i>置顶</span>
                             </#if>
@@ -98,7 +98,7 @@
                             </span>
                             <div class="clear"></div>
                             <span class="entry-more">
-                                <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark" title="Read Full Article" data-toggle="tooltip" data-placement="bottom">ReadMore</a>
+                                <a href="${config.siteUrl}/article/${item.id?c}" rel="bookmark" data-toggle="tooltip" data-placement="bottom">ReadMore</a>
                             </span>
                         </div>
                     </article>

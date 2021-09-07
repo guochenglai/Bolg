@@ -302,7 +302,7 @@ public class BizCommentServiceImpl implements BizCommentService {
             log.error("获取地址失败", e);
         }
         if (StringUtils.isEmpty(comment.getAddress())) {
-            comment.setAddress("未知");
+            comment.setAddress("UnKnown");
         }
     }
 
