@@ -52,7 +52,7 @@ $.extend({
             }, options);
             var commentBox = '<div id="comment-place">'
                     + '<div class="comment-post" id="comment-post" style="position: relative">'
-                    + '<h5 class="custom-title"><i class="fa fa-commenting-o fa-fw icon"></i><strong>评论</strong><small></small></h5>'
+                    + '<h5 class="custom-title"><i class="fa fa-commenting-o fa-fw icon"></i><strong>Comments</strong><small></small></h5>'
                     + '<form class="form-horizontal" role="form" id="comment-form">'
                     + '<div class="cancel-reply" id="cancel-reply" style="display: none;"><a href="javascript:void(0);" onclick="$.comment.cancelReply(this)" rel="external nofollow"><i class="fa fa-share"></i>取消回复</a></div>'
                     + '<input type="hidden" name="pid" id="comment-pid" value="0" size="22" tabindex="1">'
@@ -128,7 +128,7 @@ $.extend({
                             var adminIcon = '';
                             var adminClass = '';
                             if(comment.root){
-                                adminIcon = '<img src="/img/author.png" alt="" class="author-icon" title="管理员">';
+                                adminIcon = '<img src="/img/author.png" alt="" class="author-icon" title="Admin">';
                                 adminClass = 'admin-nickname';
                             }
                             var parentQuote = parent ? '<a href="#comment-' + parent.id + '" class="comment-quote">@' + parent.nickname + '</a><div style="background-color: #f5f5f5;padding: 5px;margin: 5px;border-radius: 4px;"><i class="fa fa-quote-left"></i><p></p><div style="padding-left: 10px;">' + filterXSS(parent.content) + '</div></div>' : '';
