@@ -9,12 +9,12 @@
     <div class="row about-body">
             <div class="col-sm-12 blog-main">
                 <div class="blog-body expansion">
-                    <h5 class="custom-title"><i class="fa fa-user-secret fa-fw"></i><strong>博主简介</strong><small></small></h5>
+                    <h5 class="custom-title"><i class="fa fa-user-secret fa-fw"></i><strong>Brief Introduction</strong><small></small></h5>
                     <table border="0">
                         <tr>
                             <td>
                                 <div class="pic" style="float:left;">
-                                    <img src="${config.staticWebSite}/img/personal/gcl.png" alt="That's Me" class="img-responsive" style="width: 100%;">
+                                    <img src="${config.staticWebSite}/img/personal/gcl.png" alt="That's Me" class="img-responsive" style="width:600px;height:600px;">
                                 </div>
                             </td>
                             <td valign="top">
@@ -31,9 +31,6 @@
                         </tr>
                     </table>
 
-
-
-
                     <@praise></@praise>
                 </div>
             </div>
@@ -46,6 +43,6 @@
 </div>
 
 <@footer>
-    <script src="https://v1.hitokoto.cn/?encode=js&c=i&select=%23hitokoto" defer></script>
+    <#--  <script src="https://v1.hitokoto.cn/?encode=js&c=i&select=%23hitokoto" defer></script>  -->
 </@footer>
 </@compress>

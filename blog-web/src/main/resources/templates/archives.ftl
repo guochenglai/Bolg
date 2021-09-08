@@ -3,7 +3,7 @@
 <@header title="归档目录 | ${config.siteName}" description="归档目录" canonical="/archives"></@header>
 
 <div class="container custome-container">
-    <nav class="breadcrumb">
+    <#--  <nav class="breadcrumb">
         <a class="crumbs" title="返回首页" href="${config.siteUrl}" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-home"></i>首页</a> <i
             class="fa fa-angle-right"></i>归档目录
     </nav>
@@ -55,9 +55,9 @@
             </div>
         </div>
         <#include "layout/sidebar.ftl"/>
-    </div>
+    </div>  -->
 </div>
-<@footer>
+<#--  <@footer>
     <script>
         $(document).ready(function() {
             (function() {
@@ -80,5 +80,5 @@
         });
     </script>
     <script src="https://v1.hitokoto.cn/?encode=js&c=i&select=.hitokoto%27);dom=$('.hitokoto');for(var i=0;i<dom.length;i%2B%2B){dom[i].innerText=hitokoto;}})()//" defer></script>
-</@footer>
+</@footer>  -->
 </@compress>

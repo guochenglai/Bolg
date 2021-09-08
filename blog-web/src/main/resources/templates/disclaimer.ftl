@@ -3,7 +3,7 @@
 <@header title="免责声明 | ${config.siteName}" keywords="" description="免责声明" canonical="/disclaimer"></@header>
 
 <div class="container custome-container">
-    <nav class="breadcrumb">
+    <#--  <nav class="breadcrumb">
         <a class="crumbs" title="返回首页" href="${config.siteUrl}" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-home"></i>Home</a> <i
             class="fa fa-angle-right"></i>免责声明
     </nav>
@@ -32,9 +32,9 @@
             </div>
         </div>
         <#include "layout/sidebar.ftl"/>
-    </div>
+    </div>  -->
 </div>
 <@footer>
-<script src="https://v1.hitokoto.cn/?encode=js&c=i&select=.hitokoto" defer></script>
+<#--  <script src="https://v1.hitokoto.cn/?encode=js&c=i&select=.hitokoto" defer></script>  -->
 </@footer>
 </@compress>
