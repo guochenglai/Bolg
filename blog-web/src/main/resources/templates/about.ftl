@@ -14,7 +14,7 @@
                         <tr>
                             <td>
                                 <div class="pic" style="float:left;">
-                                    <img src="${config.staticWebSite}/img/personal/gcl.png" alt="That's Me" class="img-responsive" style="width:600px;height:600px;">
+                                    <img src="${config.staticWebSite}/img/personal/gcl.png" alt="That's Me" style="width:400px;height:400px;">
                                 </div>
                             </td>
                             <td valign="top">
@@ -40,9 +40,5 @@
             </div>
         </div>
     </div>
-</div>
-
-<@footer>
-    <#--  <script src="https://v1.hitokoto.cn/?encode=js&c=i&select=%23hitokoto" defer></script>  -->
-</@footer>
+</div
 </@compress>

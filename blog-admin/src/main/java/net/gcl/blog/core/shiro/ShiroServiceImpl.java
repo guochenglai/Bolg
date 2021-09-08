@@ -58,7 +58,7 @@ public class ShiroServiceImpl implements ShiroService {
         filterChainDefinitionMap.put("/passport/login", "anon");
         filterChainDefinitionMap.put("/passport/signin", "anon");
         filterChainDefinitionMap.put("/websocket", "anon");
-        filterChainDefinitionMap.put("/favicon.png", "anon");
+        filterChainDefinitionMap.put("/favicon.ico", "anon");
         filterChainDefinitionMap.put("/error", "anon");
         filterChainDefinitionMap.put("/assets/**", "anon");
         filterChainDefinitionMap.put("/plugin/**", "anon");

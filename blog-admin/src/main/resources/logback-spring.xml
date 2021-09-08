@@ -35,14 +35,14 @@
 
     <!-- 测试环境+开发环境，日志级别为INFO且不写日志文件 -->
     <springProfile name="dev">
-        <root level="DEDBUG">
+        <root level="DEBUG">
             <appender-ref ref="STDOUT"/>
         </root>
     </springProfile>
 
     <!-- 生产环境. 日志级别为WARN且写日志文件-->
     <springProfile name="prod">
-        <root level="WARN">
+        <root level="DEBUG">
             <appender-ref ref="STDOUT"/>
             <appender-ref ref="FILE" />
         </root>

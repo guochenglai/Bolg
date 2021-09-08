@@ -110,7 +110,7 @@
                     align: 'center',
                     editable: false,
                     formatter: function (code, row, index) {
-                        return code ? '<a href="' + code + '" class="showImage" title="' + row.title + '" rel="external nofollow"><img src="' + code + '" alt="' + row.title + '" onerror="this.src=\'/assets/images/favicon.png\'" class="img-rounded" style="width: 30px;height: auto;"></a>' : '-';
+                        return code ? '<a href="' + code + '" class="showImage" title="' + row.title + '" rel="external nofollow"><img src="' + code + '" alt="' + row.title + '" onerror="this.src=\'/assets/images/favicon.ico\'" class="img-rounded" style="width: 30px;height: auto;"></a>' : '-';
                     }
                 }, {
                     field: 'comment',

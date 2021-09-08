@@ -77,7 +77,7 @@
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="siteFavicon">站点图标
                                             <i class="fa fa-question-circle" title="favicon，浏览器标签网站标题左侧的图标"></i> <span class="required">*</span></label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" class="form-control col-md-7 col-xs-12" name="siteFavicon" id="siteFavicon" required="required" placeholder="例如：http://104.41.185.226:8443/favicon.png"/>
+                                            <input type="text" class="form-control col-md-7 col-xs-12" name="siteFavicon" id="siteFavicon" required="required" placeholder="例如：http://104.41.185.226:8443/favicon.ico"/>
                                         </div>
                                     </div>
                                     <div class="item form-group">

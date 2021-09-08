@@ -32,7 +32,7 @@ INSERT INTO `dblog`.`sys_config`(`id`, `config_key`, `config_value`, `create_tim
 INSERT INTO `dblog`.`sys_config`(`id`, `config_key`, `config_value`, `create_time`, `update_time`) VALUES (5, 'siteUrl', 'http://localhost:8443', now(), now());
 INSERT INTO `dblog`.`sys_config`(`id`, `config_key`, `config_value`, `create_time`, `update_time`) VALUES (6, 'siteName', '语言', now(), now());
 INSERT INTO `dblog`.`sys_config`(`id`, `config_key`, `config_value`, `create_time`, `update_time`) VALUES (7, 'siteDesc', '心之所向，无所不成', now(), now());
-INSERT INTO `dblog`.`sys_config`(`id`, `config_key`, `config_value`, `create_time`, `update_time`) VALUES (8, 'siteFavicon', 'http://localhost:8443/img/favicon.png', now(), now());
+INSERT INTO `dblog`.`sys_config`(`id`, `config_key`, `config_value`, `create_time`, `update_time`) VALUES (8, 'siteFavicon', 'http://localhost:8443/img/favicon.ico', now(), now());
 INSERT INTO `dblog`.`sys_config`(`id`, `config_key`, `config_value`, `create_time`, `update_time`) VALUES (9, 'staticWebSite', 'http://localhost:8443', now(), now());
 INSERT INTO `dblog`.`sys_config`(`id`, `config_key`, `config_value`, `create_time`, `update_time`) VALUES (10, 'authorName', '郭承来', now(), now());
 INSERT INTO `dblog`.`sys_config`(`id`, `config_key`, `config_value`, `create_time`, `update_time`) VALUES (11, 'authorEmail', 'gcl272633743@163.com', now(), now());
@@ -243,7 +243,7 @@ INSERT INTO `dblog`.`sys_role_resources` VALUES ('96', '3', '49', now(), now());
 # 清空系统用户表
 TRUNCATE TABLE `dblog`.`sys_user`;
 # 初始化系统用户
-INSERT INTO `dblog`.`sys_user` VALUES (1, 'root', 'CGUx1FN++xS+4wNDFeN6DA==', 'Root', '18910523425', '272633743@qq.com', '272633743', NULL, NULL, 'https://localhost/img/favicon.png', 'ROOT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, '0:0:0:0:0:0:0:1', '2019-06-01 11:59:23', 254, NULL, 1, now(), now());
+INSERT INTO `dblog`.`sys_user` VALUES (1, 'root', 'CGUx1FN++xS+4wNDFeN6DA==', 'Root', '18910523425', '272633743@qq.com', '272633743', NULL, NULL, 'https://localhost/img/favicon.ico', 'ROOT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, '0:0:0:0:0:0:0:1', '2019-06-01 11:59:23', 254, NULL, 1, now(), now());
 INSERT INTO `dblog`.`sys_user` VALUES (2, 'admin', 'gXp2EbyZ+sB/A6QUMhiUJQ==', 'Admin', '18910523425', '272633743@qq.com', '272633743', NULL, NULL, NULL, 'ADMIN', NULL, NULL, NULL, NULL, NULL, 1, 1, 0, 0, '0:0:0:0:0:0:0:1', '0:0:0:0:0:0:0:1',now(), 2, NULL, 1,now(),now());
 INSERT INTO `dblog`.`sys_user` VALUES (3, 'comment-admin', 'x9qCx3yP05yWfIE5wXbCsg==', 'Admin', '', '', '', NULL, NULL, NULL, 'ADMIN', NULL, NULL, NULL, NULL, NULL, 1, 1, 0, 0, '0:0:0:0:0:0:0:1', '0:0:0:0:0:0:0:1',now(), 1, NULL, 1,now(),now());
 
