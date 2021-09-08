@@ -14,7 +14,7 @@
                         <tr>
                             <td>
                                 <div class="pic" style="float:left;">
-                                    <img src="${config.staticWebSite}/img/personal/gcl.png" alt="That's Me" style="width:400px;height:400px;">
+                                    <img src="${config.staticWebSite}/img/personal/gcl.png" alt="That's Me" style="width:400px;height:360px;">
                                 </div>
                             </td>
                             <td valign="top">
