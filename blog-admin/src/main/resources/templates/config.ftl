@@ -68,46 +68,46 @@
                                         </div>
                                     </div>
                                     <div class="item form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="siteUrl">博客地址 <i class="fa fa-question-circle" title="博客前台地址，例如: http://104.41.185.226:8443"></i> <span class="required">*</span></label>
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="siteUrl">博客地址 <i class="fa fa-question-circle" title="博客前台地址"></i> <span class="required">*</span></label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" class="form-control col-md-7 col-xs-12" name="siteUrl" id="siteUrl" required="required" placeholder="例如: http://104.41.185.226:8443"/>
+                                            <input type="text" class="form-control col-md-7 col-xs-12" name="siteUrl" id="siteUrl" required="required" placeholder="前台地址"/>
                                         </div>
                                     </div>
                                     <div class="item form-group">
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="siteFavicon">站点图标
                                             <i class="fa fa-question-circle" title="favicon，浏览器标签网站标题左侧的图标"></i> <span class="required">*</span></label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" class="form-control col-md-7 col-xs-12" name="siteFavicon" id="siteFavicon" required="required" placeholder="例如：http://104.41.185.226:8443/favicon.png"/>
+                                            <input type="text" class="form-control col-md-7 col-xs-12" name="siteFavicon" id="siteFavicon" required="required" placeholder="前台地址"/>
                                         </div>
                                     </div>
                                     <div class="item form-group">
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="staticWebSite">资源文件域名
                                             <i class="fa fa-question-circle" title="js、css、img等文件的域名地址，如果是在本项目内，则与“博客地址”设置一样即可"></i> <span class="required">*</span></label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" class="form-control col-md-7 col-xs-12" name="staticWebSite" id="staticWebSite" required="required" placeholder="例如：http://104.41.185.226:8443"/>
+                                            <input type="text" class="form-control col-md-7 col-xs-12" name="staticWebSite" id="staticWebSite" required="required" placeholder="前台地址"/>
                                         </div>
                                     </div>
-<#--                                    <div class="item form-group">-->
-<#--                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="staticWebSite">管理系统地址-->
-<#--                                            <i class="fa fa-question-circle" title="博客后台管理系统的地址，例如: http://104.41.185.226:8085"></i> <span class="required">*</span></label>-->
-<#--                                        <div class="col-md-6 col-sm-6 col-xs-12">-->
-<#--                                            <input type="text" class="form-control col-md-7 col-xs-12" name="cmsUrl" id="cmsUrl" required="required" placeholder="例如: http://104.41.185.226:8085"/>-->
-<#--                                        </div>-->
-<#--                                    </div>-->
-<#--                                    <div class="item form-group">-->
-<#--                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="copyright">版权信息-->
-<#--                                            <i class="fa fa-question-circle" title="网站版权信息"></i> </label>-->
-<#--                                        <div class="col-md-6 col-sm-6 col-xs-12">-->
-<#--                                            <input type="text" class="form-control col-md-7 col-xs-12" name="copyright" id="copyright" placeholder="例如：Copyright &copy; ${.now?string("yyyy")} zhyd.me All Rights Reserved"/>-->
-<#--                                        </div>-->
-<#--                                    </div>-->
-<#--                                    <div class="item form-group">-->
-<#--                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="copyright">网站备案号-->
-<#--                                            <i class="fa fa-question-circle" title="网站备案号"></i> </label>-->
-<#--                                        <div class="col-md-6 col-sm-6 col-xs-12">-->
-<#--                                            <input type="text" class="form-control col-md-7 col-xs-12" name="recordNumber" id="recordNumber" placeholder="例如：鲁ICP备17054970号-1"/>-->
-<#--                                        </div>-->
-<#--                                    </div>-->
+                                    <div class="item form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="staticWebSite">管理系统地址
+                                            <i class="fa fa-question-circle" title="博客后台管理系统的地址，"></i> <span class="required">*</span></label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" class="form-control col-md-7 col-xs-12" name="cmsUrl" id="cmsUrl" required="required" placeholder="后台管理系统地址"/>
+                                        </div>
+                                    </div>
+                                    <div class="item form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="copyright">版权信息
+                                            <i class="fa fa-question-circle" title="网站版权信息"></i> </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" class="form-control col-md-7 col-xs-12" name="copyright" id="copyright" placeholder="例如：Copyright &copy; ${.now?string("yyyy")} zhyd.me All Rights Reserved"/>
+                                        </div>
+                                    </div>
+                                    <div class="item form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="copyright">网站备案号
+                                            <i class="fa fa-question-circle" title="网站备案号"></i> </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" class="form-control col-md-7 col-xs-12" name="recordNumber" id="recordNumber" placeholder="例如：鲁ICP备17054970号-1"/>
+                                        </div>
+                                    </div>
                                     <div class="item form-group">
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="lazyloadPath">懒加载图片
                                             <i class="fa fa-question-circle" title="用于前台网站中对图片进行懒加载显示"></i> </label>
