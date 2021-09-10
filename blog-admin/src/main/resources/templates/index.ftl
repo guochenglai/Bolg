@@ -136,11 +136,11 @@
     </div>
 </div>
 <div class="row">
-    <#-- 分类文章数统计 -->
+    <#-- StaticticsByCategory -->
     <div class="col-md-4 col-sm-4 col-xs-12">
         <div class="x_panel fixed_height_320 statistics-box">
             <div class="x_title">
-                <h2>分类文章数统计</h2>
+                <h2>StaticticsByCategory</h2>
                 <ul class="nav navbar-right panel_toolbox">
                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
                 </ul>
@@ -151,11 +151,11 @@
             </div>
         </div>
     </div>
-    <#-- 文章访问TOP.10 -->
+    <#-- TopViewed TOP.10 -->
     <div class="col-md-4 col-sm-4 col-xs-12">
         <div class="x_panel fixed_height_320 statistics-box">
             <div class="x_title">
-                <h2>文章访问TOP.10</h2>
+                <h2>TOP 10</h2>
                 <ul class="nav navbar-right panel_toolbox">
                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
                 </ul>
@@ -167,7 +167,7 @@
                         <#if hotList?? && (hotList?size > 0)>
                             <#list hotList as item>
                             <li class="title word-prase"><a href="${config.siteUrl}/article/${item.id?c}" title="${item.title}">${item.title}</a></li>
-                            <li class="count"><span title="浏览人次：${item.lookCount?c}">${item.lookCount?c}</span></li>
+                            <li class="count"><span title="ViewCount：${item.lookCount?c}">${item.lookCount?c}</span></li>
                             </#list>
                         </#if>
                     </@articleTag>
@@ -175,11 +175,11 @@
             </div>
         </div>
     </div>
-    <#-- 爬虫访问统计TOP.10 -->
+    <#-- Craw TOP.10 -->
     <div class="col-md-4 col-sm-4 col-xs-12">
         <div class="x_panel fixed_height_320 statistics-box">
             <div class="x_title">
-                <h2>爬虫访问统计TOP.10</h2>
+                <h2>Craw TOP.10</h2>
                 <ul class="nav navbar-right panel_toolbox">
                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
                 </ul>
@@ -191,13 +191,13 @@
         </div>
     </div>
 
-    <#-- 近期文章 -->
+    <#-- Recent Articels -->
     <div class="col-md-6 col-sm-6 col-xs-12">
         <div class="x_panel statistics-box">
             <div class="x_title">
-                <h2>近期文章 <small> </small></h2>
+                <h2>RecentArticels <small> </small></h2>
                 <ul class="nav navbar-right panel_toolbox">
-                    <li><a href="/articles" target="_blank" title="查看更多"><i class="fa fa-ellipsis-h"></i></a></li>
+                    <li><a href="/articles" target="_blank" title="LoadMore"><i class="fa fa-ellipsis-h"></i></a></li>
                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
                 </ul>
                 <div class="clearfix"></div>
@@ -206,10 +206,10 @@
                 <table class="table table-bordered recentArticles">
                     <thead>
                     <tr>
-                        <th class="title"><div class="word-prase">标题</div></th>
-                        <th>分类</th>
-                        <th>浏览数</th>
-                        <th>发布时间</th>
+                        <th class="title"><div class="word-prase">Title</div></th>
+                        <th>Category</th>
+                        <th>ViewCount</th>
+                        <th>ReleaseDate</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -245,10 +245,10 @@
                 <table class="table table-bordered recentComments">
                     <thead>
                     <tr>
-                        <th><div>发起人</div></th>
-                        <th class="content"><div class="word-prase">评论内容</div></th>
-                        <th class="source"><div class="word-prase">出处</div></th>
-                        <th>评论时间</th>
+                        <th><div>User</div></th>
+                        <th class="content"><div class="word-prase">Content</div></th>
+                        <th class="source"><div class="word-prase">Source</div></th>
+                        <th>Title</th>
                     </tr>
                     </thead>
                     <tbody>

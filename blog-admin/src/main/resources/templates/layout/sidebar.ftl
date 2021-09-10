@@ -3,7 +3,7 @@
     <div class="menu_section">
         <ul class="nav side-menu">
             <@shiro.user>
-                <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+                <li><a href="/"><i class="fa fa-home"></i>Home</a></li>
             </@shiro.user>
             <@zhydTag method="menus" userId="${user.id}">
                 <#if menus?? && menus?size gt 0>

@@ -59,7 +59,7 @@
                 </@shiro.hasPermission>
                 <li>
                     <a href="${config.siteUrl!}" target="_blank">
-                        <i class="fa fa-desktop"> 访问前台</i>
+                        <i class="fa fa-desktop"> MyWeb</i>
                     </a>
                 </li>
             </ul>

@@ -57,7 +57,7 @@
                                     </a>
                                     <ul class="dropdown-menu" role="menu">
                                         <#list item.nodes as node>
-                                        <li><a href="/type/${node.id?c}" title="点击查看《${node.name!}》的文章">${node.name!}</a></li>
+                                        <li><a href="/type/${node.id?c}" >${node.name!}</a></li>
                                         </#list>
                                     </ul>
                                 </li>

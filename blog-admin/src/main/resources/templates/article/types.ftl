@@ -6,8 +6,8 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <@breadcrumb>
                 <ol class="breadcrumb">
-                    <li><a href="/">首页</a></li>
-                    <li class="active">文章分类管理</li>
+                    <li><a href="/">Home</a></li>
+                    <li class="active">CategoryManage</li>
                 </ol>
             </@breadcrumb>
             <div class="x_panel">
@@ -21,47 +21,47 @@
         </div>
     </div>
 </div>
-<@addOrUpdateMOdal defaultTitle="添加分类">
+<@addOrUpdateMOdal defaultTitle="AddCategory">
     <input type="hidden" name="id">
     <div class="item form-group">
-        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">名称 <span class="required">*</span></label>
+        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Name <span class="required">*</span></label>
         <div class="col-md-6 col-sm-6 col-xs-12">
-            <input type="text" class="form-control col-md-7 col-xs-12" name="name" id="name" required="required" placeholder="请输入分类名称"/>
+            <input type="text" class="form-control col-md-7 col-xs-12" name="name" id="name" required="required" placeholder="CateGoryName"/>
         </div>
     </div>
     <div class="item form-group">
-        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="type">父级 </label>
+        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="type">Parent </label>
         <div class="col-md-6 col-sm-6 col-xs-6">
             <select id="pid" name="pid" class="form-control col-md-5 col-xs-5" target="combox" data-url="/type/listParent" data-method="post"></select>
         </div>
     </div>
     <div class="item form-group">
-        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="description">描述 </label>
+        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="description">Description </label>
         <div class="col-md-6 col-sm-6 col-xs-12">
-            <textarea class="form-control col-md-7 col-xs-12" id="description" name="description" placeholder="请输入分类描述" maxlength="100"></textarea>
+            <textarea class="form-control col-md-7 col-xs-12" id="description" name="description" placeholder="Description" maxlength="100"></textarea>
         </div>
     </div>
     <div class="item form-group">
-        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="sort">排序 </label>
+        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="sort">Order </label>
         <div class="col-md-6 col-sm-6 col-xs-12">
-            <input type="text" class="form-control col-md-7 col-xs-12" name="sort" id="sort" placeholder="请输入排序"/>
+            <input type="text" class="form-control col-md-7 col-xs-12" name="sort" id="sort" placeholder="Order"/>
         </div>
     </div>
     <div class="item form-group">
-        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="available">是否可用 <span class="required">*</span></label>
+        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="available">Available <span class="required">*</span></label>
         <div class="col-md-6 col-sm-6 col-xs-12">
             <ul class="list-unstyled list-inline">
                 <li>
                     <div class="radio">
                         <label>
-                            <input type="radio" class="flat" checked name="available" value="1"> 可用
+                            <input type="radio" class="flat" checked name="available" value="1"> Enable
                         </label>
                     </div>
                 </li>
                 <li>
                     <div class="radio">
                         <label>
-                            <input type="radio" class="flat" name="available" value="0"> 禁用
+                            <input type="radio" class="flat" name="available" value="0"> Disable
                         </label>
                     </div>
                 </li>

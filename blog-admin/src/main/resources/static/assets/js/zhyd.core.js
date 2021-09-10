@@ -80,7 +80,7 @@ var zhyd = window.zhyd || {
                         var thisId = $(this).data("value");
                         var thisText = $(this).text().trim();
                         console.log(thisText);
-                        $this.tagsinput('add', {"id": thisId, "name": thisText}, {add: false});
+                        $this.tagsinput('add', { "id": thisId, "name": thisText }, { add: false });
                     }
 
                     $($bindBox).find("li").each(function () {
@@ -91,12 +91,12 @@ var zhyd = window.zhyd || {
                     $(".bootstrap-tagsinput input").bind('keydown', function (event) {
                         var thisVal = $(this).val();
                         if (event.key == 'Enter' || event.keyCode == '13') {
-                            $.post('/tag/add', {name: thisVal, description: thisVal}, function (response) {
+                            $.post('/tag/add', { name: thisVal, description: thisVal }, function (response) {
                                 if (response.status !== 200) {
                                     $.alert.error(response.message);
                                 } else {
                                     var data = response.data;
-                                    $this.tagsinput('add', {"id": data.id, "name": data.name}, {addNew: true});
+                                    $this.tagsinput('add', { "id": data.id, "name": data.name }, { addNew: true });
                                 }
                             });
                         }
@@ -130,11 +130,11 @@ var zhyd = window.zhyd || {
             var liHight = $(li[0]).height();
             var upHeight = 0 - settings.line * liHight;//滚动的高度；
             var scrollUp = function () {
-                ul.animate({marginTop: upHeight}, settings.speed, function () {
+                ul.animate({ marginTop: upHeight }, settings.speed, function () {
                     for (i = 0; i < settings.line; i++) {
                         ul.find("li:first", $this).appendTo(ul);
                     }
-                    ul.css({marginTop: 0});
+                    ul.css({ marginTop: 0 });
                 });
             };
             var autoPlay = function () {
@@ -148,7 +148,7 @@ var zhyd = window.zhyd || {
         };
 
         if ($("#scrolldiv")) {
-            $("#scrolldiv").textSlider({line: 1, speed: 300, timer: 10000});
+            $("#scrolldiv").textSlider({ line: 1, speed: 300, timer: 10000 });
         }
     },
     wangEditor: {
@@ -276,11 +276,11 @@ var zhyd = window.zhyd || {
                         $(".w-e-up-img-container").find("input").remove();
                         // 重新绑定选中图片按钮的事件
                         $("div[id^='up-trigger'], div.w-e-up-btn").unbind("click").click(function () {
-                            $.modal.material.open({multiSelect: true, selectable: 10}, function (selectedImageUrls) {
-                                if(!selectedImageUrls) {
+                            $.modal.material.open({ multiSelect: true, selectable: 10 }, function (selectedImageUrls) {
+                                if (!selectedImageUrls) {
                                     return false;
                                 }
-                                for(var i = 0; i < selectedImageUrls.length; i ++){
+                                for (var i = 0; i < selectedImageUrls.length; i++) {
                                     editor.txt.append('<img src="' + selectedImageUrls[i] + '" alt="" style="max-width: 100%;height: auto;border-radius: 6px;"/>');
                                     $contentBox.val(editor.txt.html());
                                 }
@@ -367,8 +367,8 @@ var zhyd = window.zhyd || {
                     });
                     $div.html("自动保存完成");
                     $div.appendTo($(".CodeMirror"));
-                    $div.animate({opacity: 1}, 1000, function () {
-                        $div.animate({opacity: 0}, 1000, function () {
+                    $div.animate({ opacity: 1 }, 1000, function () {
+                        $div.animate({ opacity: 0 }, 1000, function () {
                             $(this).remove();
                         })
                     })
@@ -397,57 +397,57 @@ var zhyd = window.zhyd || {
                 function getState(cm, pos) {
                     pos = pos || cm.getCursor("start");
                     var stat = cm.getTokenAt(pos);
-                    if(!stat.type) return {};
+                    if (!stat.type) return {};
                     var types = stat.type.split(" ");
                     var ret = {},
                         data, text;
-                    for(var i = 0; i < types.length; i++) {
+                    for (var i = 0; i < types.length; i++) {
                         data = types[i];
-                        if(data === "strong") {
+                        if (data === "strong") {
                             ret.bold = true;
-                        } else if(data === "variable-2") {
+                        } else if (data === "variable-2") {
                             text = cm.getLine(pos.line);
-                            if(/^\s*\d+\.\s/.test(text)) {
+                            if (/^\s*\d+\.\s/.test(text)) {
                                 ret["ordered-list"] = true;
                             } else {
                                 ret["unordered-list"] = true;
                             }
-                        } else if(data === "atom") {
+                        } else if (data === "atom") {
                             ret.quote = true;
-                        } else if(data === "em") {
+                        } else if (data === "em") {
                             ret.italic = true;
-                        } else if(data === "quote") {
+                        } else if (data === "quote") {
                             ret.quote = true;
-                        } else if(data === "strikethrough") {
+                        } else if (data === "strikethrough") {
                             ret.strikethrough = true;
-                        } else if(data === "comment") {
+                        } else if (data === "comment") {
                             ret.code = true;
-                        } else if(data === "link") {
+                        } else if (data === "link") {
                             ret.link = true;
-                        } else if(data === "tag") {
+                        } else if (data === "tag") {
                             ret.image = true;
-                        } else if(data.match(/^header(\-[1-6])?$/)) {
+                        } else if (data.match(/^header(\-[1-6])?$/)) {
                             ret[data.replace("header", "heading")] = true;
                         }
                     }
                     return ret;
                 }
-                function insertHtml(imgUrl){
+                function insertHtml(imgUrl) {
                     var cm = simplemde.codemirror;
                     var state = getState(cm);
                     var options = simplemde.options;
 
-                    if(/editor-preview-active/.test(cm.getWrapperElement().lastChild.className))
+                    if (/editor-preview-active/.test(cm.getWrapperElement().lastChild.className))
                         return;
                     var text;
                     var start = options.insertTexts.image[0];
                     var end = options.insertTexts.image[1];
                     var startPoint = cm.getCursor("start");
                     var endPoint = cm.getCursor("end");
-                    if(imgUrl) {
+                    if (imgUrl) {
                         end = end.replace("#url#", imgUrl);
                     }
-                    if(state.image) {
+                    if (state.image) {
                         text = cm.getLine(startPoint.line);
                         start = text.slice(0, startPoint.ch);
                         end = text.slice(startPoint.ch);
@@ -460,7 +460,7 @@ var zhyd = window.zhyd || {
                         var img = start + text + end;
                         cm.replaceSelection(img);
                         startPoint.ch += img.length;
-                        if(startPoint !== endPoint) {
+                        if (startPoint !== endPoint) {
                             endPoint.ch += img.length;
                         }
                     }
@@ -470,11 +470,11 @@ var zhyd = window.zhyd || {
                 try {
                     var insertImage = document.getElementsByClassName("editor-toolbar")[0].getElementsByTagName("a")[9];
                     insertImage.onclick = function (ev) {
-                        $.modal.material.open({multiSelect: true, selectable: 10}, function (selectedImageUrls) {
-                            if(!selectedImageUrls) {
+                        $.modal.material.open({ multiSelect: true, selectable: 10 }, function (selectedImageUrls) {
+                            if (!selectedImageUrls) {
                                 return false;
                             }
-                            for(var i = 0; i < selectedImageUrls.length; i ++){
+                            for (var i = 0; i < selectedImageUrls.length; i++) {
                                 insertHtml(selectedImageUrls[i]);
                             }
                         })
@@ -492,7 +492,7 @@ var zhyd = window.zhyd || {
             lock: "fa fa-lock"
         },
         _open: function (container, msg, type) {
-            var html = Mustache.render(this._box, {icon: this._icon[type], text: msg, maskType: type});
+            var html = Mustache.render(this._box, { icon: this._icon[type], text: msg, maskType: type });
             $(container).append(html);
         },
         closeAll: function (container) {
@@ -546,7 +546,7 @@ $(document).ready(function () {
      */
     $(".uploadPreview").each(function () {
         var $this = $(this);
-        $this.uploadPreview({imgContainer: $this.data("preview-container")});
+        $this.uploadPreview({ imgContainer: $this.data("preview-container") });
     });
 
     $("#updPassBtn").click(function () {
@@ -587,19 +587,13 @@ $(document).ready(function () {
     });
 
     var notice = [
-        '<strong class="red">Hi Boy! 前台首页的 “轮播”只会显示“推荐文章”哦</strong>',
-        '要想百度搜索引擎快速收录文章，可以试试“推送”功能哦',
-        '批量推送文章到百度可以一次提交多篇文章哦',
-        '碰到页面显示和数据库内容不一致的情况，可以先考虑清下redis缓存哦',
-        '不可以随便用“文章搬运工”去爬取别人未授权的文章哈',
-        '使用过程中如果有不能解决的问题，请去提issue哈，在群里消息太多，有时候会看不到消息记录',
-        '可以通过右上角“系统配置”-“文章编辑器”选择默认的文章发布编辑器'
+        '<strong class="red">Welcome Guo Chenglai/strong>'
     ];
     var $noticeBox = $("#notice-box");
     var tpl = '{{#data}}<li class="scrolltext-title">'
         + '{{&.}}'
         + '</li>{{/data}}';
-    var html = Mustache.render(tpl, {"data": $.tool.shuffle(notice)});
+    var html = Mustache.render(tpl, { "data": $.tool.shuffle(notice) });
     $noticeBox.html(html);
 
     /**

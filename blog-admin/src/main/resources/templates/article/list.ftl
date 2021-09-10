@@ -6,22 +6,22 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <@breadcrumb>
                 <ol class="breadcrumb">
-                    <li><a href="/">首页</a></li>
-                    <li class="active">文章管理</li>
+                    <li><a href="/">Home</a></li>
+                    <li class="active">ArticleManagement</li>
                 </ol>
             </@breadcrumb>
             <div class="x_panel">
                 <form class="form-inline"  id="article1" onclick="return false;">
                     <div class="form-group">
-                        <label class="control-label">名称和描述:</label>
-                        <input class=" form-control" name="keywords"  placeholder="请输入关键字查询" value="">
+                        <label class="control-label">Description:</label>
+                        <input class=" form-control" name="keywords"  placeholder="KeyWords" value="">
                     </div>
                     <div class="form-group">
-                        <label class="control-label">名称:</label>
-                        <input class="form-control" name="title"  placeholder="请输入名称关键字查询" value="">
+                        <label class="control-label">Name:</label>
+                        <input class="form-control" name="title"  placeholder="KeyWords" value="">
                     </div>
                     <div class="form-group">
-                        <button id="search-button" class="btn btn-primary"><i class="fa fa-search"></i>查询</button>
+                        <button id="search-button" class="btn btn-primary"><i class="fa fa-search"></i>Query</button>
                     </div>
                 </form>
 
@@ -29,22 +29,17 @@
                     <div class="<#--table-responsive-->">
                         <div class="btn-group hidden-xs" id="toolbar">
                             <@shiro.hasPermission name="article:publish">
-                                <a class="btn btn-success" title="发表文章" href="${(config.articleEditor! == 'md')?string('/article/publishMd', '/article/publish')}"> <i class="fa fa-pencil fa-fw"></i>  </a>
+                                <a class="btn btn-success" title="Publish" href="${(config.articleEditor! == 'md')?string('/article/publishMd', '/article/publish')}"> <i class="fa fa-pencil fa-fw"></i>  </a>
                             </@shiro.hasPermission>
                             <@shiro.hasPermission name="article:batchDelete">
-                                <button id="btn_delete_ids" type="button" class="btn btn-danger" title="删除选中">
+                                <button id="btn_delete_ids" type="button" class="btn btn-danger" title="Delete">
                                     <i class="fa fa-trash-o fa-fw"></i>
                                 </button>
                             </@shiro.hasPermission>
                             <#-- 由草稿状态批量修改为已发布状态 -->
                             <@shiro.hasPermission name="article:publish">
-                                <button id="btn_update_status" type="button" class="btn btn-default" title="批量发布">
+                                <button id="btn_update_status" type="button" class="btn btn-default" title="BatchPublish">
                                     <i class="fa fa-bullhorn fa-fw"></i>
-                                </button>
-                            </@shiro.hasPermission>
-                            <@shiro.hasPermission name="article:batchPush">
-                                <button id="btn_push_ids" type="button" class="btn btn-info" title="批量推送到百度">
-                                    <i class="fa fa-send-o fa-fw"></i>
                                 </button>
                             </@shiro.hasPermission>
                         </div>
