@@ -14,17 +14,17 @@
                         <tr>
                             <td>
                                 <div class="pic" style="float:left;">
-                                    <img src="${config.staticWebSite}/img/personal/gcl.png" alt="That's Me" style="width:400px;height:360px;">
+                                    <img src="${config.staticWebSite}/img/personal/gcl.png" alt="That's Me" style="width:400px;height:400px;">
                                 </div>
                             </td>
                             <td valign="top">
                                 <div class="info" style="float:left;margin-left:10px;">
-                                    Name:&nbsp;&nbsp;:&nbsp;&nbsp;郭承来<br>
+                                    Name&nbsp;&nbsp;:&nbsp;&nbsp;郭承来<br>
                                     Working Experience&nbsp;&nbsp;:<br>
                                     &nbsp;&nbsp;&nbsp;&nbsp;2014-05&nbsp;–&nbsp;2017-05&nbsp;&nbsp;Qunar.com<br>
                                     &nbsp;&nbsp;&nbsp;&nbsp;2017-05&nbsp;–&nbsp;2021-07&nbsp;&nbsp;Alibaba Cloud<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;2017-07&nbsp;–&nbsp;Present&nbsp;&nbsp;Microsoft<br>
-                                    Intro:&nbsp;&nbsp;:<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;2021-07&nbsp;–&nbsp;Present&nbsp;&nbsp;&nbsp;Microsoft<br>
+                                    Intro&nbsp;&nbsp;:<br>
                                     &nbsp;&nbsp;&nbsp;&nbsp;If you have any questions, please contact: gcl272633743@163.com<br>
                                 </div>
                             </td>
