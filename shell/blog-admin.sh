@@ -1,2 +1,2 @@
-scp ~/Workspace/Bolg/blog-web/target/blog-admin.jar gcl@104.41.185.226:/home/gcl/workspace
+scp ~/Workspace/Bolg/blog-web/target/blog-admin.jar centos01@20.210.96.76:/home/centos01/workspace
 nohup java -server -Xms256m -Xmx512m -jar blog-admin.jar --spring.profiles.active=prod > nohup.out  2>&1 &
