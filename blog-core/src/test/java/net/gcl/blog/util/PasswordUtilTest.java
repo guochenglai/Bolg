@@ -15,13 +15,13 @@ public class PasswordUtilTest {
 
     @Test
     public void passwordTest() throws Exception {
-        encryptTest("123456", "admin");
+        encryptTest("Qunar2017!admin", "admin");
     }
 
     public void encryptTest(String password, String salt) throws Exception {
         String encrypt = PasswordUtil.encrypt(password, salt);
         System.out.println(encrypt);
-        String decrypt = PasswordUtil.decrypt("VpavsFi6DaRqF5o3nziCgw==", "root");
+        String decrypt = PasswordUtil.decrypt(encrypt, "root");
         System.out.println(decrypt);
     }
 
