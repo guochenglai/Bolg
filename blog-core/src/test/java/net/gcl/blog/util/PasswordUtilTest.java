@@ -15,7 +15,7 @@ public class PasswordUtilTest {
 
     @Test
     public void passwordTest() throws Exception {
-        encryptTest("Qunar2017!admin", "admin");
+        encryptTest("123", "admin");
     }
 
     public void encryptTest(String password, String salt) throws Exception {
